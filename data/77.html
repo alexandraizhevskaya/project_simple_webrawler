@@ -1,0 +1,571 @@
+<!Doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Android and iOS App to Learn C Programming | Programiz</title>
+  <link rel="shortcut icon" href="/sites/tutorial2program/files/favicon.png" />
+  <link type="text/css" rel="stylesheet" href="//cdn.programiz.com/sites/tutorial2program/files/advagg_css/css__BJ6Ou6QsBRtnFTmxaakamOIS8n4QswDP2XnnZ1sxtaM__NBuvkP6eInGIkb1aJvUHx5PX79XApuxBDkk_77W5tYk__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.programiz.com/sites/tutorial2program/files/advagg_css/css__7zOkbZnadCKvEvLLRPpVfLUA2Xv4LlO35QvX2Ph01W4__NjYEEylRhAIT2durnUrqrLHUDNR1yO3VSqxg8AFRWrM__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.css" media="all" />
+
+  <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//cdn.programiz.com" />
+<link rel="preconnect" href="//cdn.programiz.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//cdn.programiz.com" />
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdn.programiz.com" />
+<![endif]-->
+<script>
+  var url = window.location.href;
+  window.googletag = window.googletag || {cmd: []};
+  window.googletag.cmd.push(function() {
+      switch (true) {
+          case url.includes("/c-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_lang');
+              break;
+          case url.includes("/cpp-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_plus_plus_lang');
+              break;
+          case url.includes("/csharp-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_sharp_lang');
+              break;
+          case url.includes("/dsa"):
+              window.googletag.pubads().setTargeting('prog_lang', 'dsa');
+              break;
+          case url.includes("/java-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'java');
+              break;
+          case url.includes("/javascript"):
+              window.googletag.pubads().setTargeting('prog_lang', 'javascript');
+              break;
+          case url.includes("/kotlin-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'kotlin');
+              break;
+          case url.includes("/python-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'python');
+              break;
+          case url.includes("/swift-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'swift');
+              break;
+      }
+  });
+</script>
+
+<script src="https://cmp.uniconsent.com/v2/stub.min.js"></script>
+<script async src='https://cmp.uniconsent.com/v2/a8d3ae4937/cmp.js'></script>
+<script type="text/javascript">
+    window.googletag = window.googletag || {};
+    window.googletag.cmd = window.googletag.cmd || [];
+    window.googletag.cmd.push(function () {
+        window.googletag.pubads().enableAsyncRendering();
+        window.googletag.pubads().disableInitialLoad();
+    });
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+</script>
+<script>
+    __tcfapi("addEventListener", 2, function (tcData, success) {
+        if (success && tcData.unicLoad === true) {
+            if (!window._initAds) {
+                window._initAds = true;
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = '//dsh7ky7308k4b.cloudfront.net/publishers/Programizcomnew.min.js';
+                document.head.appendChild(script);
+ 
+                try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                        return true;
+                    }).catch(function (e) {
+                        if (document.getElementsByClassName("content-top-ad") !=  null && document.getElementsByClassName("content-top-ad").length > 0) {
+                            document.getElementsByClassName("content-top-ad")[0].style.display = "none";
+                        }
+                        var ad_elements = document.getElementsByClassName("pub-ad");
+                        while (ad_elements.length > 0) {
+                            ad_elements[0].parentNode.removeChild(ad_elements[0]);
+                        }
+
+                        if (document.getElementById("carbon-block") != null) {
+                            var carbonScript = document.createElement("script");
+                            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CKYDL27L&placement=wwwprogramizcom";
+                            carbonScript.id = "_carbonads_js";
+                            document.getElementById("carbon-block").appendChild(carbonScript);
+                        }
+                    });
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+    });
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKXT7MH');</script>
+<style>.pub-ad{z-index:0;clear:both;position:relative;text-align:center}.pub-ad::before{content:'ADVERTISEMENTS';display:block;position:absolute;top:-20px;left:0;right:0;height:20px;font-size:9px;line-height:20px;letter-spacing:1px;color:#bcbfc5}</style>
+<!-- Facebook Pixel Code -->
+<script async>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '123000288571689');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=123000288571689&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<style>.adSpinner {display: none;}</style>
+  
+<!--[if lte IE 9]>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__ZyeOaiFuDejQQbhUV7yg7atYZnj4WLfH77o0scv4068__MZdWWgUEYpsEWLcU0RqkaXMsEyksbpCgnf4XwXRkqz0__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer" onload="function advagg_mod_1(){advagg_mod_1.count=++advagg_mod_1.count||1;try{if(advagg_mod_1.count<=40){init_drupal_core_settings();advagg_mod_1.count=100;}}
+catch(e){if(advagg_mod_1.count>=40){throw e;}
+else{window.setTimeout(advagg_mod_1,1);}}}
+function advagg_mod_1_check(){if(window.init_drupal_core_settings&&window.jQuery&&window.Drupal){advagg_mod_1();}
+else{window.setTimeout(advagg_mod_1_check,1);}}
+advagg_mod_1_check();"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"programiz","theme_token":"chu0luuAwww3sjQuO-tof3uJ6qVrCgKFHBm4Erg-tKw"}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+</head>
+
+<body>
+    <main>
+  
+        
+    
+    
+    
+    <div id="node-2250" class="node node-marketing clearfix" about="/learn-c" typeof="sioc:Item foaf:Document">
+
+  
+      <span property="dc:title" content="Android and iOS App to Learn C Programming" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+      <header class="main-nav-marketing">
+  <nav>
+    <div class="container">
+      <div class="nav-wrap">
+        <button class="main-nav-marketing__menu-btn d-md-none">
+          <svg class="programiz-icon">
+            <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#menu" />
+          </svg>
+        </button>
+        <div class="logo-area">
+          <a href="/learn-c">
+            <img class="logo-area__logo" src="//cdn.programiz.com/cdn/farfuture/-O9QyQ_z8quryO13TdHOhd0RuP0bhM-4CX_zkTAydbY/mtime:1605833048/sites/all/themes/programiz/assets/marketing/learn-c-logo.svg" />
+          </a>
+        </div>
+        <div class="navigation-wrap">
+          <button class="main-nav-marketing__close-btn d-md-none">
+            <svg class="programiz-icon">
+              <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x" />
+            </svg>
+          </button>
+          <div class="navigation-marketing">
+            <a class="navigation-marketing__nodes" href="/learn-c">Home</a>
+            <a class="navigation-marketing__nodes" href="/learn-c/programiz-app-plus">Programiz APP+</a>
+            <a class="navigation-marketing__nodes" href="/learn-c/updates">Updates</a>
+            <a class="navigation-marketing__nodes" href="/learn-c/faq">FAQs</a>
+          </div>
+          <div class="navigation-footer d-md-none">
+            <object
+              class="navigation-footer__logo"
+              type="image/svg+xml"
+              data="/sites/all/themes/programiz/assets/marketing/learn-c-logo.svg"
+            ></object>
+            <p class="navigation-footer__copyright">
+              © Learn C Programming - Programiz 2022.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>  <div class="hero-area">
+  <div class="container">
+    <div class="hero-area__inner">
+      <div class="hero-area__contents">
+        <div class="hero-contents">
+          <h1 class="hero-contents__title">
+            <p class="color-blue">Learn C Programming</p>
+            on the Go
+          </h1>
+          <p class="hero-contents__description">
+            Begin your C programming Journey with the ease of your phone.
+          </p>
+
+          <div class="hero-contents__link">
+            <div class="hero-contents__link__store">
+              <a
+                title="Learn C Programming: Programiz on Play Store"
+                href="https://play.google.com/store/apps/details?id=com.programiz.learnc&referrer=utm_campaign%3Dprogramiz-homepage%26utm_source%3Dprogramiz-website"
+                target="_blank"
+                class="hero-contents__link__store__nodes app-link app-link--android"
+              >
+                <img src="//cdn.programiz.com/cdn/farfuture/oPYQWUP80e3pKj6gBo-2HCT4bgKakH_qdJj7tJWHs7Y/mtime:1595476458/sites/all/themes/programiz/assets/marketing/playstore.svg" />
+              </a>
+              <a
+                title="Learn C Programming: Programiz on App Store"
+                href="https://apps.apple.com/app/apple-store/id1533942237?pt=120228772&ct=programiz-homepage&mt=8"
+                target="_blank"
+                class="hero-contents__link__store__nodes app-link app-link--ios"
+              >
+                <img src="//cdn.programiz.com/cdn/farfuture/9bVmrLMukhKwNI9eMFJ6AZqYac0TtYMQ57Q9josu8zE/mtime:1595476457/sites/all/themes/programiz/assets/marketing/appstore.svg" />
+              </a>
+            </div>
+            <div class="hero-contents__link__qr">
+              <img
+                class="hero-contents__link__qr__code"
+                src="//cdn.programiz.com/cdn/farfuture/Hd-IifZaZ5Ocg7g9LE7jxoPW81Z21A1Jte7f-CtnL2Y/mtime:1622778125/sites/all/themes/programiz/assets/marketing/c-qr.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-area__image hero-area__image--sp d-block d-md-none">
+        <img
+          alt="hero-banner"
+          src="//cdn.programiz.com/cdn/farfuture/ngCKzmFsmzpxAexBd0SkC35r_Wumq1vgLatlyk4yvbY/mtime:1605833048/sites/all/themes/programiz/assets/marketing/learn-c-banner-mobile.png"
+          srcset="/sites/all/themes/programiz/assets/marketing/learn-c-banner-mobile@2x.png 2x"
+        />
+      </div>
+
+      <div class="hero-area__image hero-area__image--tab d-none d-md-block d-xl-none">
+        <img
+          alt="hero-banner"
+          srcset="/sites/all/themes/programiz/assets/marketing/learn-c-android-banner@2x.png 2x"
+          src="//cdn.programiz.com/cdn/farfuture/H3_C84CdG1jfOplTlbMtTQHL7e-llgcE4Re_9lbQAJc/mtime:1605833048/sites/all/themes/programiz/assets/marketing/learn-c-android-banner.png"
+        />
+      </div>
+
+      <div class="hero-area__image hero-area__image--tab d-none d-md-none d-xl-block">
+        <img
+          alt="hero-banner"
+          srcset="/sites/all/themes/programiz/assets/marketing/learn-c-android-banner@2x.png 2x"
+          src="//cdn.programiz.com/cdn/farfuture/H3_C84CdG1jfOplTlbMtTQHL7e-llgcE4Re_9lbQAJc/mtime:1605833048/sites/all/themes/programiz/assets/marketing/learn-c-android-banner.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="features-section">
+  <h2 class="section-title">
+    Master C Programming One Step at a Time
+  </h2>
+
+  <div class="feature-block-wrap">
+    <div class="feature-block">
+      <div class="feature-block__image">
+        <object
+          class="feature-block__image__node"
+          type="image/svg+xml"
+          data="/sites/all/themes/programiz/assets/marketing/easytolearn.svg"
+        ></object>
+      </div>
+      <div class="feature-block__details">
+        <h3 class="feature-block__title">Easy to Learn</h3>
+        <p class="feature-block__description">
+          Follow step by step lessons. Learning programming has never been easier.
+        </p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <div class="feature-block__image">
+        <object class="feature-block__image__node" type="image/svg+xml" data="/sites/all/themes/programiz/assets/marketing/code.svg"></object>
+      </div>
+      <div class="feature-block__details">
+        <h3 class="feature-block__title">Code on the Go</h3>
+        <p class="feature-block__description">
+          Learn to code anywhere, anytime. All you need is a phone.
+        </p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <div class="feature-block__image">
+        <object
+          class="feature-block__image__node"
+          type="image/svg+xml"
+          data="/sites/all/themes/programiz/assets/marketing/examples.svg"
+        ></object>
+      </div>
+      <div class="feature-block__details">
+        <h3 class="feature-block__title">Learn by Examples</h3>
+        <p class="feature-block__description">
+          Start coding from day one with dozens of practical C programming examples.
+        </p>
+      </div>
+    </div>
+    <div class="feature-block">
+      <div class="feature-block__image">
+        <object
+          class="feature-block__image__node"
+          type="image/svg+xml"
+          data="/sites/all/themes/programiz/assets/marketing/bookmark.svg"
+        ></object>
+      </div>
+      <div class="feature-block__details">
+        <h3 class="feature-block__title">Bookmark your lessons</h3>
+        <p class="feature-block__description">
+          Find a lesson useful? Save the lesson and revisit them anytime.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="importance-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="importance">
+          <h2 class="importance__title">Why Learn C Programming from Programiz?</h2>
+          <div class="importance__block">
+             <div class="importance__block__single">
+              <strong>Millions of users</strong> visit Programiz every month to learn to code and we pride ourselves on being among the leaders in the industry.
+            </div>
+
+            <div class="importance__block__single">
+              To continue our efforts on building the <strong>best learning experience</strong> for beginners, we carefully designed the Learn C Programming app.
+            </div>
+
+            <div class="importance__block__single">
+              The app takes a practical approach to teach programming that mimics <strong>real-world</strong> programming scenarios.
+            </div>
+
+            <div class="importance__block__single">
+              With our <strong>hand-picked lessons</strong> and <strong>practical examples</strong> along with our online Python compiler, you can start writing code from the very first day.
+            </div>
+          </div>
+        </div>
+        <div class="importance-wrap__image" style="right: -200px;">
+          <img src="//cdn.programiz.com/cdn/farfuture/OoVl7cm73QpA8hJr8K6o2-tjAFZ1kiH3hI_ASCFUM40/mtime:1605833048/sites/all/themes/programiz/assets/marketing/learn-c-ios-banner.png"
+            srcset="/sites/all/themes/programiz/assets/marketing/learn-c-ios-banner@2x.png 2x"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <object class="cta__logo" type="image/svg+xml" data="/sites/all/themes/programiz/assets/marketing/learn-c-favicon.svg"></object>
+  <p class="cta__description">
+    Don't have Learn C Programming Yet?
+  </p>
+
+  <div class="cta__link">
+    <a
+      title="Learn C Programming: Programiz on Play Store"
+      href="https://play.google.com/store/apps/details?id=com.programiz.learnc&referrer=utm_campaign%3Dprogramiz-homepage%26utm_source%3Dprogramiz-website"
+      target="_blank"
+      class="cta__link__action app-link app-link--android"
+    >
+      <img class="cta__icon" src="//cdn.programiz.com/cdn/farfuture/oPYQWUP80e3pKj6gBo-2HCT4bgKakH_qdJj7tJWHs7Y/mtime:1595476458/sites/all/themes/programiz/assets/marketing/playstore.svg" />
+    </a>
+    <a
+      title="Learn C Programming: Programiz on App Store"
+      href="https://apps.apple.com/app/apple-store/id1533942237?pt=120228772&ct=programiz-homepage&mt=8"
+      target="_blank"
+      class="cta__link__action app-link app-link--ios"
+    >
+      <img class="cta__icon" src="//cdn.programiz.com/cdn/farfuture/9bVmrLMukhKwNI9eMFJ6AZqYac0TtYMQ57Q9josu8zE/mtime:1595476457/sites/all/themes/programiz/assets/marketing/appstore.svg" />
+    </a>
+  </div>
+</div>
+  <footer class="footer footer--marketing">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-5 col-md-6 d-none d-md-block">
+        <div class="footer__content">
+          <object class="footer__logo" type="image/svg+xml"
+            data="/sites/all/themes/programiz/assets/marketing/learn-c-logo-white.svg"></object>
+          <div class="footer__form footer__form--pc">
+            <div class="footer__form__title">
+              Download Learn C Programming App
+            </div>
+          </div>
+
+          <div class="footer__vendor-btn">
+            <div class="footer__vendor-btn__row">
+              <a title="Learn C: Programiz on Play Store"
+                href="https://play.google.com/store/apps/details?id=com.programiz.learnc&referrer=utm_campaign%3Dprogramiz-landing%26utm_source%3Dprogramiz-website"
+                target="_blank" class="app-link app-link--android">
+                <img class="app-download-btn app-download-btn--offset"
+                  src="//cdn.programiz.com/cdn/farfuture/d8oXG2v0dCLdIbQKcMRjJxSY96Ec6FBG-qAVJkrDFDU/mtime:1592900945/sites/all/themes/programiz/assets/playstore.svg" />
+              </a>
+            </div>
+            <div class="footer__vendor-btn__row">
+              <a title="Learn C: Programiz on App Store"
+                href="https://apps.apple.com/app/apple-store/id1533942237?pt=120228772&ct=programiz-landing&mt=8"
+                target="_blank" class="app-link app-link--ios">
+                <img class="app-download-btn" src="//cdn.programiz.com/cdn/farfuture/G0ZBnGKr9e0xtuBVtFKkEKiLZtcp92YYJhqcPpBgFXU/mtime:1592900945/sites/all/themes/programiz/assets/appstore.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <div class="footer__link-area">
+          <h4 class="footer__link-area__title">App</h4>
+
+          <ul class="footer__links">
+            <li class="footer__links__nodes">
+              <a title="Programiz APP+" href="/learn-c/programiz-app-plus" class="link-node">Programiz App+</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Updates" href="/learn-c/updates" class="link-node">Updates</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Learn C Programming" href="/learn-c" class="link-node">Learn C Programming</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Learn Python" href="/learn-python" class="link-node">Learn Python</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Learn Java" href="/learn-java" class="link-node">Learn Java</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <div class="footer__link-area">
+          <h4 class="footer__link-area__title">Support</h4>
+
+          <ul class="footer__links">
+            <li class="footer__links__nodes">
+              <a title="Frequently Asked Questions" href="/learn-c/faq" class="link-node">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <div class="footer__link-area">
+          <h4 class="footer__link-area__title">Follow Us</h4>
+
+          <ul class="footer__links">
+            <li class="footer__links__nodes">
+              <a title="Programiz on Facebook" href="https://www.facebook.com/programiz" target="_blank"
+                class="link-node">Facebook</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Programiz on Instagram" href="https://www.instagram.com/_programiz/" target="_blank"
+                class="link-node">Instagram</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Programiz on Linkedin" href="https://www.linkedin.com/company/programiz" target="_blank"
+                class="link-node">LinkedIn</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Programiz on Twitter" href="https://twitter.com/programiz" target="_blank"
+                class="link-node">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-6">
+        <div class="footer__link-area">
+          <h4 class="footer__link-area__title">Legal</h4>
+
+          <ul class="footer__links">
+            <li class="footer__links__nodes">
+              <a title="Privacy Policy" href="/privacy-policy" class="link-node">Privacy Policy</a>
+            </li>
+            <li class="footer__links__nodes">
+              <a title="Terms & Conditions" href="/terms-of-use" class="link-node">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sp-brand-area d-block d-md-none">
+      <div class="d-flex justify-content-center">
+        <object class="sp-brand-area__logo" type="image/svg+xml"
+          data="/sites/all/themes/programiz/assets/marketing/learn-c-logo-white.svg"></object>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="footer__vendor-btn__row">
+          <a title="Learn C: Programiz on Play Store"
+            href="https://play.google.com/store/apps/details?id=com.programiz.learnc&referrer=utm_campaign%3Dprogramiz-homepage%26utm_source%3Dprogramiz-website"
+            target="_blank" class="app-link app-link--android">
+            <img class="app-download-btn app-download-btn--offset"
+              src="//cdn.programiz.com/cdn/farfuture/d8oXG2v0dCLdIbQKcMRjJxSY96Ec6FBG-qAVJkrDFDU/mtime:1592900945/sites/all/themes/programiz/assets/playstore.svg" />
+          </a>
+        </div>
+        <div class="footer__vendor-btn__row">
+          <a title="Learn C: Programiz on App Store"
+            href="https://apps.apple.com/app/apple-store/id1533942237?pt=120228772&ct=programiz-homepage&mt=8"
+            target="_blank" class="app-link app-link--ios">
+            <img class="app-download-btn" src="//cdn.programiz.com/cdn/farfuture/G0ZBnGKr9e0xtuBVtFKkEKiLZtcp92YYJhqcPpBgFXU/mtime:1592900945/sites/all/themes/programiz/assets/appstore.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__end">
+      <p class="copyright-text">
+        © Learn C Programming - Programiz.
+      </p>
+
+      <div class="social-icons">
+        <a title="" href="" class="social-icons__links">
+          <object class="footer_programiz_logo" type="image/svg+xml"
+            data="/sites/all/themes/programiz/assets/logo_white.svg"></object>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>  </div>
+
+  
+  
+</div>
+
+      
+  </main>  <script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__IRKvqhfnH28lfKSoojb2Zt5yNFztv71Ttm-n2WHgYGE__tDmd9jh-9E4CQtZulyGAmhfNZBJm8vVdgIYG4DiISCk__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__--0Z8Ko2Ouantt4UUbDD1guuMHUWwLlSlrZ6GNz8h-g__PK2cfMIA5VvN9akHYyfRTdjVyQ6O1YKYlNcDqBdggGQ__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function advagg_mod_2(){advagg_mod_2.count=++advagg_mod_2.count||1;try{if(advagg_mod_2.count<=40){var base_path='/';var module_path='sites/all/modules/programiz_rate_share';advagg_mod_2.count=100;}}
+catch(e){if(advagg_mod_2.count>=40){throw e;}
+else{window.setTimeout(advagg_mod_2,250);}}}
+function advagg_mod_2_check(){if(window.jQuery&&window.Drupal&&window.Drupal.settings){advagg_mod_2();}
+else{window.setTimeout(advagg_mod_2_check,250);}}
+advagg_mod_2_check();
+//--><!]]>
+</script>
+</body>
+
+</html>

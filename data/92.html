@@ -1,0 +1,1307 @@
+<!Doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Java Examples | Programiz</title>
+  <link rel="shortcut icon" href="/sites/tutorial2program/files/favicon.png" />
+  <link type="text/css" rel="stylesheet" href="//cdn.programiz.com/sites/tutorial2program/files/advagg_css/css__BJ6Ou6QsBRtnFTmxaakamOIS8n4QswDP2XnnZ1sxtaM__NBuvkP6eInGIkb1aJvUHx5PX79XApuxBDkk_77W5tYk__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.programiz.com/sites/tutorial2program/files/advagg_css/css__7zOkbZnadCKvEvLLRPpVfLUA2Xv4LlO35QvX2Ph01W4__NjYEEylRhAIT2durnUrqrLHUDNR1yO3VSqxg8AFRWrM__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.css" media="all" />
+
+  <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//cdn.programiz.com" />
+<link rel="preconnect" href="//cdn.programiz.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//cdn.programiz.com" />
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdn.programiz.com" />
+<![endif]-->
+<meta name="description" content="This page contains examples of basic concepts of Python programming like loops, functions, native datatypes and so on." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.programiz.com/java-programming/examples" />
+<link rel="shortlink" href="https://www.programiz.com/java-programming/examples" />
+<script>
+  var url = window.location.href;
+  window.googletag = window.googletag || {cmd: []};
+  window.googletag.cmd.push(function() {
+      switch (true) {
+          case url.includes("/c-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_lang');
+              break;
+          case url.includes("/cpp-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_plus_plus_lang');
+              break;
+          case url.includes("/csharp-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'c_sharp_lang');
+              break;
+          case url.includes("/dsa"):
+              window.googletag.pubads().setTargeting('prog_lang', 'dsa');
+              break;
+          case url.includes("/java-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'java');
+              break;
+          case url.includes("/javascript"):
+              window.googletag.pubads().setTargeting('prog_lang', 'javascript');
+              break;
+          case url.includes("/kotlin-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'kotlin');
+              break;
+          case url.includes("/python-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'python');
+              break;
+          case url.includes("/swift-programming"):
+              window.googletag.pubads().setTargeting('prog_lang', 'swift');
+              break;
+      }
+  });
+</script>
+
+<script src="https://cmp.uniconsent.com/v2/stub.min.js"></script>
+<script async src='https://cmp.uniconsent.com/v2/a8d3ae4937/cmp.js'></script>
+<script type="text/javascript">
+    window.googletag = window.googletag || {};
+    window.googletag.cmd = window.googletag.cmd || [];
+    window.googletag.cmd.push(function () {
+        window.googletag.pubads().enableAsyncRendering();
+        window.googletag.pubads().disableInitialLoad();
+    });
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+</script>
+<script>
+    __tcfapi("addEventListener", 2, function (tcData, success) {
+        if (success && tcData.unicLoad === true) {
+            if (!window._initAds) {
+                window._initAds = true;
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = '//dsh7ky7308k4b.cloudfront.net/publishers/Programizcomnew.min.js';
+                document.head.appendChild(script);
+ 
+                try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                        return true;
+                    }).catch(function (e) {
+                        if (document.getElementsByClassName("content-top-ad") !=  null && document.getElementsByClassName("content-top-ad").length > 0) {
+                            document.getElementsByClassName("content-top-ad")[0].style.display = "none";
+                        }
+                        var ad_elements = document.getElementsByClassName("pub-ad");
+                        while (ad_elements.length > 0) {
+                            ad_elements[0].parentNode.removeChild(ad_elements[0]);
+                        }
+
+                        if (document.getElementById("carbon-block") != null) {
+                            var carbonScript = document.createElement("script");
+                            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CKYDL27L&placement=wwwprogramizcom";
+                            carbonScript.id = "_carbonads_js";
+                            document.getElementById("carbon-block").appendChild(carbonScript);
+                        }
+                    });
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+    });
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKXT7MH');</script>
+<style>.pub-ad{z-index:0;clear:both;position:relative;text-align:center}.pub-ad::before{content:'ADVERTISEMENTS';display:block;position:absolute;top:-20px;left:0;right:0;height:20px;font-size:9px;line-height:20px;letter-spacing:1px;color:#bcbfc5}</style>
+<!-- Facebook Pixel Code -->
+<script async>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '123000288571689');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=123000288571689&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<style>.adSpinner {display: none;}</style>
+  
+<!--[if lte IE 9]>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__Pim5tTowQ71vrRNvaAg0m07jpCpXM6RsaXi_DARl1Go__GFcMVwA_8zYqqv3dYigkNwJmJBQm6DAlc8htDu-dGw4__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__ZyeOaiFuDejQQbhUV7yg7atYZnj4WLfH77o0scv4068__MZdWWgUEYpsEWLcU0RqkaXMsEyksbpCgnf4XwXRkqz0__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer" onload="function advagg_mod_3(){advagg_mod_3.count=++advagg_mod_3.count||1;try{if(advagg_mod_3.count<=40){init_drupal_core_settings();advagg_mod_3.count=100;}}
+catch(e){if(advagg_mod_3.count>=40){throw e;}
+else{window.setTimeout(advagg_mod_3,1);}}}
+function advagg_mod_3_check(){if(window.init_drupal_core_settings&&window.jQuery&&window.Drupal){advagg_mod_3();}
+else{window.setTimeout(advagg_mod_3_check,1);}}
+advagg_mod_3_check();"></script>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__UW4URQsON5h-xjwepC-HoW32RCC10thhh4f0DQ1P8z4__iy3MF_BJ4z37BEHDRzBgtdJlLYv17mxSwzrRA_UvpQA__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"programiz","theme_token":"LBv6grsm4cBqeiFg0Yjxi0xeYb4C5g5EASwKBwQcKnY","jquery_version":"1.7","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/programiz_rate_share\/rate_share.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/programiz\/lib\/highlightjs\/highlight.min.css":1,"sites\/all\/themes\/programiz\/lib\/mautic\/mautic.css":1,"sites\/all\/themes\/programiz\/dist\/main.css":1},"js":{"sites\/all\/modules\/programiz_rate_share\/programiz_rate_share.js":1,"sites\/all\/modules\/better_exposed_filters\/better_exposed_filters.js":1,"sites\/all\/modules\/ctools\/js\/auto-submit.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/programiz\/dist\/main.min.js":1,"sites\/all\/themes\/programiz\/lib\/highlightjs\/highlight.min.js":1,"sites\/all\/themes\/programiz\/lib\/mautic\/mautic.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1}},"better_exposed_filters":{"datepicker":false,"slider":false,"settings":[],"autosubmit":false,"views":{"python_programming_examples_page":{"displays":{"page_3":{"filters":{"select":{"required":false}}}}}}},"urlIsAjaxTrusted":{"\/java-programming\/examples":true,"\/views\/ajax":true},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:d3e6c94c4006b5b87bf5b85b31abaa19":{"view_name":"python_programming_examples_page","view_display_id":"page_3","view_args":"","view_path":"java-programming\/examples","view_base_path":"java-programming\/examples","view_dom_id":"d3e6c94c4006b5b87bf5b85b31abaa19","pager_element":0}}}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+</head>
+
+<body>
+    <div class="main--backdrop"></div>
+
+<main class="has-notice-bar-top"><header class="main-nav d-flex flex-column justify-content-center"><div class="notice-bar-top d-none d-lg-block" style="background: #FFEFe3;">
+    <div class="container d-flex justify-content-between">
+        <a class="notice-bar-top__message--link" rel="nofollow" href="https://programiz.pro/offer/price-up?utm_source=Top-banner-programiz-web&amp;utm_medium=banner&amp;utm_campaign=price-increase-sale__Top-banner-programiz-web__September__60" title="Learn to Code Interactively" target="_blank">
+            <div class="notice-bar-top__message-wrapper">
+                <div class="notice-bar-top__sticker">
+                    <p>60%</p>
+                    <p>OFF</p>
+                </div>
+
+                <p class="notice-bar-top__message">
+                    Get ahead of your peers. <strong>Try hands-on Java</strong> with Programiz PRO. <span class="notice-bar-top__message notice-bar-top__message--link-underlined">Claim Discount</span>                </p>
+            </div>
+        </a>
+
+        <span class="d-flex notice-bar-top__message notice-bar-top__message--secondary  sale-timer align-items-center"></span>
+    </div>
+</div>
+
+<script>
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      
+
+createFixedBarTimer();
+
+function createFixedBarTimer() {
+  const startDate = new Date('Sep 23, 2022 00:00:00 GMT-0700').getTime();
+  const endDate = new Date('Oct 01, 2022 00:00:00 GMT-0700').getTime();
+
+  const x = setInterval(function () {
+    let now = new Date().getTime();
+
+    const distance = endDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (now > startDate && now < endDate) {
+      jQuery('.sale-timer').html(days + 'd : ' + hours + 'hrs : ' + minutes + 'mins : ' + seconds + 's');
+    }
+  }, 1000);
+}
+
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 250 ms.
+      window.setTimeout(advagg_mod_1, 250);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.jQuery && window.Drupal && window.Drupal.settings) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 250);
+  }
+}
+advagg_mod_1_check();</script><nav><div class="container flex-1">
+        <div class="d-flex align-items-center p-relative">
+          <button class="main-nav__menu-btn d-lg-none d-flex">
+            <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#menu"></use></svg></button>
+
+          <div class="brand">
+            <a href="/" title="Programiz">
+              <img class="d-lg-none" src="//cdn.programiz.com/sites/tutorial2program/files/sp_logo.svg" width="28" height="28" alt="Programiz"><img class="d-none d-lg-block" src="//cdn.programiz.com/sites/tutorial2program/files/pc_logo.svg" width="84" height="28" alt="Programiz"></a>
+          </div>
+
+                      <div class="navigation d-none d-lg-flex align-items-center">
+                
+    
+    
+    
+     <a class="navigation__node navigation__node--pro" href="#" title="Learn to Code Interactively" rel="nofollow"><span class="navigation__node__label">Courses</span>
+    <svg class="programiz-icon programiz-icon--smallest navigation__node__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-down"></use></svg></a>
+  <a class="navigation__node" href="#" title="Programming Tutorials"><span class="navigation__node__label">Tutorials </span>
+    <svg class="programiz-icon programiz-icon--smallest navigation__node__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-down"></use></svg></a>
+  <a class="navigation__node" href="javascript:void(0);" title="Programming Examples">
+    <span class="navigation__node__label"> Examples </span>
+    <svg class="programiz-icon programiz-icon--smallest navigation__node__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#chevron-down"></use></svg></a>
+                </div>
+          
+                        
+    
+    
+    
+    <form action="/java-programming/examples" method="post" id="search-api-page-search-form-simplest-programming-tutorials-f" accept-charset="UTF-8"><div><div class="search-input search-api-page-search-form-simplest-programming-tutorials-f"><button type="submit" class="search-input__form-submit" hidden></button><button type='\"button\"' class="search-input__clear btn"><svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button><button type='\"button\"' class="btn btn--clear c-default"><svg class="programiz-icon programiz-icon--small search-input__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#search"></use></svg></button><input type="text" value="" placeholder="Search tutorials and examples" id="edit-keys-2" name="keys_2" class="search-input__control" autocomplete="off"><input type="hidden" name="id" value="2"><input type="hidden" name="form_build_id" value="form-urH8Bx9bSUcRP-2Bh6BIuDWJinZk0O-kodevvyfd5vQ"><input type="hidden" name="form_id" value="search_api_page_search_form_simplest_programming_tutorials_f"></div></div></form>
+              
+        </div>
+      </div>
+    </nav></header><!-- Tutorials and Examples contents --><div class="sub-menu--backdrop"></div>
+        
+    
+    
+    
+    
+<!-- Mobile view -->
+<div class="sub-menu sub-menu--sp sub-menu--sp--tutorial-examples sub-menu__mobile-head-wrap">
+  <div class="sub-menu__wrap">
+    <div class="sub-menu__head">
+      <div class="sub-menu__tab">
+        <div class="sub-menu__tab__head">
+          <button class="sub-menu__tab__node sub-menu__tab__node--index d-none">
+            <!-- Change the title dynamically -->
+            Course Index
+          </button>
+          <button class="sub-menu__tab__node sub-menu__tab__node--explore">
+            Explore Programiz
+          </button>
+        </div>
+        <div class="sub-menu__tab__body sub-menu__tab__body--index d-none"></div>
+        <div class="sub-menu__tab__body sub-menu__tab__body--explore">
+                      <a href="javascript:void(0);" title="Python" class="sub-menu__tab__list-node " data-language="python">Python</a>
+                      <a href="javascript:void(0);" title="JavaScript" class="sub-menu__tab__list-node " data-language="javascript">JavaScript</a>
+                      <a href="javascript:void(0);" title="SQL" class="sub-menu__tab__list-node " data-language="sql">SQL</a>
+                      <a href="javascript:void(0);" title="C" class="sub-menu__tab__list-node " data-language="c">C</a>
+                      <a href="javascript:void(0);" title="C++" class="sub-menu__tab__list-node " data-language="cpp">C++</a>
+                      <a href="javascript:void(0);" title="Java" class="sub-menu__tab__list-node sub-menu__tab__list-node--active" data-language="java">Java</a>
+                      <a href="javascript:void(0);" title="Kotlin" class="sub-menu__tab__list-node " data-language="kotlin">Kotlin</a>
+                      <a href="javascript:void(0);" title="Swift" class="sub-menu__tab__list-node " data-language="swift">Swift</a>
+                      <a href="javascript:void(0);" title="C#" class="sub-menu__tab__list-node " data-language="csharp">C#</a>
+                      <a href="javascript:void(0);" title="DSA" class="sub-menu__tab__list-node " data-language="dsa">DSA</a>
+                  </div>
+      </div>
+
+      <button class="btn btn--skeleton menu-hide-trigger">
+        <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+    </div>
+    <div class="tabbed-content tabbed-content--no-border">
+      <div class="tabbed-content__right tabbed-content__right--index d-none">
+        <!-- Load contents dynamically -->
+      </div>
+      <div class="tabbed-content__right tabbed-content__right--explore">
+        <!-- PRO - Banner -->
+                  <div class="sub-menu__cta sub-menu__mobile-banner">
+            <div class="d-flex sub-menu--mobile-banner">
+              <p class="body16-font-size font-weight-600">Learn Java practically <br>
+                and <span class="get-certified-text">Get Certified</span>.</p>
+              <a class="pro-link pro-link--mobile-pro-link body14-font-size" href="https://programiz.pro/learn/master-java?utm_source=nav-tutorial-button&amp;utm_campaign=programiz&amp;utm_medium=referral" target="_blank">ENROLL</a>
+            </div>
+          </div>
+                <div class="sub-menu__contents sub-menu--mobile sub-menu__contents--java" id="m-java">
+          <div class="sub-menu__links">
+            <!-- Popular tutorials -->
+                          <div class="sub-menu__links__column sub-menu__links__column--left">
+                <h4 class="sub-menu__links__column__title">Popular Tutorials</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title='Java "Hello World" Program' href="/java-programming/hello-world" class="sub-menu__link__column">Java "Hello World" Program</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Java for Loop" href="/java-programming/for-loop" class="sub-menu__link__column">Java for Loop</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Arrays in Java" href="/java-programming/arrays" class="sub-menu__link__column">Arrays in Java</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Interfaces in Java" href="/java-programming/class-objects" class="sub-menu__link__column">Interfaces in Java</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Java ArrayList" href="/java-programming/arraylist" class="sub-menu__link__column">Java ArrayList</a>
+                      </div>
+                    </div>
+                                  </div>
+                <a title="Java Tutorials" href="/java-programming" class="d-flex align-items-center font-weight-500">
+                  Start Learning Java                  <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+              </div>
+            
+            <!-- Popular examples -->
+                          <div class="sub-menu__links__column sub-menu__links__column--left">
+                <h4 class="sub-menu__links__column__title">Popular Examples</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Check prime number" href="/java-programming/examples/prime-number" class="sub-menu__link__column">Check prime number</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Print the Fibonacci series" href="/java-programming/examples/fibonacci-series" class="sub-menu__link__column">Print the Fibonacci series</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Print Pyramids and Patterns" href="/java-programming/examples/pyramid-pattern" class="sub-menu__link__column">Print Pyramids and Patterns</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Multiply two matrices" href="/java-programming/examples/multiplication-table" class="sub-menu__link__column">Multiply two matrices</a>
+                      </div>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <div class="sub-menu__link__column">
+                        <a title="Find the standard deviation" href="/java-programming/examples/standard-deviation" class="sub-menu__link__column">Find the standard deviation</a>
+                      </div>
+                    </div>
+                                  </div>
+                <a title="Java Examples" href="/java-programming/examples" class="d-flex align-items-center font-weight-500">
+                  Explore Java Examples
+                  <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+              </div>
+            
+            <!-- Reference materials -->
+                          <div class="sub-menu__links__column sub-menu__links__column--right">
+                <h4 class="sub-menu__links__column__title">Reference Materials</h4>
+                <div class="sub-menu__link">
+                                      <div class="sub-menu__link__row">
+                      <a href="/java-programming/library/string" title="String" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        String                        <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="/java-programming/library/arraylist" title="ArrayList" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        ArrayList                        <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="/java-programming/library/hashmap" title="HashMap" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        HashMap                        <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                                      <div class="sub-menu__link__row">
+                      <a href="/java-programming/library/math" title="Math" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                        Math                        <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                  
+                  <a title="Java References" href="/java-programming/library" class="d-flex align-items-center font-weight-500">
+                    View all
+                    <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                </div>
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pro Desktop view -->
+<div class="sub-menu sub-menu--pc sub-menu--pc--pro">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+        <div class="sub-menu__wrap">
+          <div class="tabbed-content tabbed-content--no-border">
+            <div class="tabbed-content__left tabbed-content__left--small">
+              <div class="tabbed-link-container">
+                                  <div class="tabbed-link">
+                    <a title="Learning Paths" href="javascript:void(0);" class="tabbed-link__node tabbed-link__node--active" data-type="learning_paths">
+                      Learning Paths                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Challenges" href="javascript:void(0);" class="tabbed-link__node " data-type="challenges">
+                      Challenges                    </a>
+                  </div>
+                              </div>
+            </div>
+            <div class="tabbed-content__right">
+              <div class="sub-menu__contents sub-menu__contents--learning-paths" id="t-learning-paths">
+
+                <div class="sub-menu__links">
+                  <div class="sub-menu__links__column sub-menu__links__column--left-pro">
+                    <div class="pro-nav-left-container">
+                      <div class="pro-nav-left-container--image" style="background-image: url(/sites/all/themes/programiz/assets/java-pro-nav-left.png)"></div>
+
+                      <h4 class="sub-menu__links__column__title">
+                        Learn Java Interactively</h4>
+
+                      <a class="btn btn--primary btn--xlarge d-flex align-items-center" title="Try for Free" href="https://programiz.pro/learn/master-java?utm_source=nav-pro-button&amp;utm_campaign=programiz&amp;utm_medium=referral">
+                        <span for="" class="btn__label">Try for Free</span>
+                        <svg class="programiz-icon ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                      <button class="btn btn--skeleton ml-auto">
+                        <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+                    </div>
+                  </div>
+
+                  <div class="sub-menu__links__column sub-menu__links__column--right-pro">
+                    <h4 class="sub-menu__links__column__title">Courses</h4>
+                    <div class="sub-menu__link">
+
+                      
+                        <div class="sub-menu__link__row">
+                          <a title="Become a Java Master" href="https://programiz.pro/learn/master-java?utm_source=nav-pro-button&amp;utm_campaign=programiz&amp;utm_medium=referral" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                            Become a Java Master                          </a>
+                        </div>
+                      
+                        <div class="sub-menu__link__row">
+                          <a title="Become a C Master" href="https://programiz.pro/learn/master-c-programming?utm_source=nav-pro-button&amp;utm_campaign=programiz&amp;utm_medium=referral" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                            Become a C Master                          </a>
+                        </div>
+                      
+                        <div class="sub-menu__link__row">
+                          <a title="Become a Python Master" href="https://programiz.pro/learn/master-python?utm_source=nav-pro-button&amp;utm_campaign=programiz&amp;utm_medium=referral" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                            Become a Python Master                          </a>
+                        </div>
+                                            <a title="Try for Free" href="https://programiz.pro/catalog/languages/java?utm_source=nav-pro-button&amp;utm_campaign=programiz&amp;utm_medium=referral" class="d-flex align-items-center font-weight-500 view-all-courses-challenges">
+                        View all Courses
+                        <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop view -->
+<div class="sub-menu sub-menu--pc sub-menu--pc--tutorial">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+        <div class="sub-menu__wrap">
+          <div class="tabbed-content tabbed-content--no-border">
+            <div class="tabbed-content__left tabbed-content__left--small">
+              <div class="tabbed-link-container">
+                                  <div class="tabbed-link">
+                    <a title="Python" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="python">
+                      <span>
+                        Python                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="JavaScript" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="javascript">
+                      <span>
+                        JavaScript                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="SQL" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="sql">
+                      <span>
+                        SQL                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="c">
+                      <span>
+                        C                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C++" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="cpp">
+                      <span>
+                        C++                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Java" href="javascript:void(0);" class="d-flex tabbed-link__node tabbed-link__node--active" data-language="java">
+                      <span>
+                        Java                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Kotlin" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="kotlin">
+                      <span>
+                        Kotlin                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Swift" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="swift">
+                      <span>
+                        Swift                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C#" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="csharp">
+                      <span>
+                        C#                      </span>
+                    </a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="DSA" href="javascript:void(0);" class="d-flex tabbed-link__node " data-language="dsa">
+                      <span>
+                        DSA                      </span>
+                    </a>
+                  </div>
+                              </div>
+            </div>
+            <div class="tabbed-content__right">
+              <div class="sub-menu__contents sub-menu__contents--java" id="t-java">
+                <!-- PRO - Banner -->
+                                  <div class="sub-menu__cta">
+                    <div class="d-flex sub-menu--desktop-banner">
+                      <h3 class="h3-font">Learn Java practically <br>
+                        and <span class="get-certified-text">Get Certified</span>.</h3>
+                      <a class="pro-link body14-font-size font-weight-700" href="https://programiz.pro/learn/master-java?utm_source=nav-tutorial-button&amp;utm_campaign=programiz&amp;utm_medium=referral" target="_blank">ENROLL FOR FREE!</a>
+                    </div>
+                    <button class="btn btn--skeleton">
+                      <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+                  </div>
+
+                
+                <div class="sub-menu__links">
+                  <!-- Popular tutorials -->
+                                      <div class="sub-menu__links__column sub-menu__links__column--left">
+                      <h4 class="sub-menu__links__column__title">Popular Tutorials</h4>
+                      <div class="sub-menu__link">
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title='Java "Hello World" Program' href="/java-programming/hello-world" class="sub-menu__link__column">Java "Hello World" Program</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Java for Loop" href="/java-programming/for-loop" class="sub-menu__link__column">Java for Loop</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Arrays in Java" href="/java-programming/arrays" class="sub-menu__link__column">Arrays in Java</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Interfaces in Java" href="/java-programming/class-objects" class="sub-menu__link__column">Interfaces in Java</a>
+                            </div>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <div class="sub-menu__link__column">
+                              <a title="Java ArrayList" href="/java-programming/arraylist" class="sub-menu__link__column">Java ArrayList</a>
+                            </div>
+                          </div>
+                                              </div>
+                      <a title="Java tutorials" href="/java-programming" class="d-flex align-items-center font-weight-500 d-lg-none">
+                        Start Learning Java                        <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                      <a title="All Java tutorials" href="/java-programming" class="d-flex align-items-center font-weight-600 article-font-size sub-menu-all-tutorials-link">
+                        <span>
+                          All Java Tutorials
+                        </span>
+                        <svg class="programiz-icon programiz-icon--medium"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                      <!-- <a title="Java tutorials" href="/java-programming" class="d-flex align-items-center font-weight-500">
+                        View all tutorials
+                        <svg class="programiz-icon programiz-icon--small ml-2x">
+                          <use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right">
+                          </use>
+                        </svg>
+                      </a> -->
+                    </div>
+                  
+                  <!-- Reference materials -->
+                                      <div class="sub-menu__links__column sub-menu__links__column--right">
+                      <h4 class="sub-menu__links__column__title">Reference Materials</h4>
+                      <div class="sub-menu__link">
+                        
+                                                  <div class="sub-menu__link__row">
+                            <a title="String" href="/java-programming/library/string" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              String                              <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="ArrayList" href="/java-programming/library/arraylist" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              ArrayList                              <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="HashMap" href="/java-programming/library/hashmap" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              HashMap                              <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                          </div>
+                                                  <div class="sub-menu__link__row">
+                            <a title="Math" href="/java-programming/library/math" class="btn btn--gray btn--small btn--block d-flex align-items-center">
+                              Math                              <svg class="programiz-icon programiz-icon--small ml-auto"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                          </div>
+                                              </div>
+                      <a title="Java References" href="/java-programming/library" class="d-flex align-items-center font-weight-500">
+                        View all
+                        <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                    </div>
+                                                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+        
+    
+    
+    
+    
+<!-- Desktop view only -->
+<div class="sub-menu sub-menu--pc sub-menu--pc--examples">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10">
+        <div class="sub-menu__wrap">
+          <div class="tabbed-content tabbed-content--no-border">
+            <div class="tabbed-content__left tabbed-content__left--small">
+
+              <div class="tabbed-link-container">
+                                  <div class="tabbed-link">
+                    <a title="Python" href="javascript:void(0);" class="tabbed-link__node " data-language="python">Python</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="JavaScript" href="javascript:void(0);" class="tabbed-link__node " data-language="javascript">JavaScript</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C" href="javascript:void(0);" class="tabbed-link__node " data-language="c">C</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="C++" href="javascript:void(0);" class="tabbed-link__node " data-language="cpp">C++</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Java" href="javascript:void(0);" class="tabbed-link__node tabbed-link__node--active" data-language="java">Java</a>
+                  </div>
+                                  <div class="tabbed-link">
+                    <a title="Kotlin" href="javascript:void(0);" class="tabbed-link__node " data-language="kotlin">Kotlin</a>
+                  </div>
+                              </div>
+
+            </div>
+            <div class="tabbed-content__right">
+              <div class="sub-menu__contents sub-menu__contents--java" id="examples-java">
+                                  <div class="sub-menu__cta">
+                    <div class="d-flex sub-menu--desktop-banner">
+                      <p class="h3-font">Learn Java practically <br>
+                        and <span class="get-certified-text">Get Certified</span>.</p>
+                      <a class="pro-link body14-font-size font-weight-700" href="https://programiz.pro/learn/master-java?utm_source=nav-example-button&amp;utm_campaign=programiz&amp;utm_medium=referral" target="_blank">ENROLL FOR FREE!</a>
+                    </div>
+                    <button class="btn btn--skeleton">
+                      <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+                  </div>
+                
+
+                <div class="sub-menu__links">
+                  <div class="sub-menu__links__column sub-menu__links__column--left">
+                    <h4 class="sub-menu__links__column__title">Popular Examples</h4>
+                    <div class="sub-menu__link">
+                                              <div class="sub-menu__link__row">
+                          <div class="sub-menu__link__column">
+                            <a title="Check prime number" href="/java-programming/examples/prime-number" class="sub-menu__link__column">Check prime number</a>
+                          </div>
+                        </div>
+                                              <div class="sub-menu__link__row">
+                          <div class="sub-menu__link__column">
+                            <a title="Print the Fibonacci series" href="/java-programming/examples/fibonacci-series" class="sub-menu__link__column">Print the Fibonacci series</a>
+                          </div>
+                        </div>
+                                              <div class="sub-menu__link__row">
+                          <div class="sub-menu__link__column">
+                            <a title="Print Pyramids and Patterns" href="/java-programming/examples/pyramid-pattern" class="sub-menu__link__column">Print Pyramids and Patterns</a>
+                          </div>
+                        </div>
+                                              <div class="sub-menu__link__row">
+                          <div class="sub-menu__link__column">
+                            <a title="Multiply two matrices" href="/java-programming/examples/multiplication-table" class="sub-menu__link__column">Multiply two matrices</a>
+                          </div>
+                        </div>
+                                              <div class="sub-menu__link__row">
+                          <div class="sub-menu__link__column">
+                            <a title="Find the standard deviation" href="/java-programming/examples/standard-deviation" class="sub-menu__link__column">Find the standard deviation</a>
+                          </div>
+                        </div>
+                                          </div>
+                    <a title="Java Examples" href="/java-programming/examples" class="align-items-center font-weight-600 article-font-size sub-menu-all-tutorials-link d-none d-lg-flex">
+                      <span>
+                        All Java Examples
+                      </span>
+                      <svg class="programiz-icon programiz-icon--small ml-2x"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#arrow-right"></use></svg></a>
+                  </div>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+  <!-- Get app link -->
+        
+    
+    
+    
+    
+<div class="get-app-link-wrapper">
+  <a class="get-app-link" href="https://programiz.pro/learn/master-java?utm_source=right-floating-block&amp;utm_campaign=programiz&amp;utm_medium=referral" target="_blank" rel="nofollow">
+    <img class="app-link-items app-logo app-link-items--open-state" src="//cdn.programiz.com/cdn/farfuture/MtYlOFkrVOnvkBKwjr9-FzyGYZCliWNSGWSNjaC3Vwo/mtime:1582195806/sites/all/themes/programiz/assets/sp_logo.svg"><p class="app-link-items app-text app-link-items--closed-state">Try PRO for FREE</p>
+    <p class="app-link-items app-text app-link-items--open-state">Learn Java Interactively</p>
+    <button class="app-link-items btn app-close-icon app-link-items--open-state" type="button">
+      <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+  </a>
+</div>
+      
+  
+        
+    
+    
+    
+        <div class="top-banner top-banner--example">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+    <div class="title-section">
+          <a href="https://www.programiz.com/java-programming">
+      <div class="title-section__image">
+        <p>
+          <img alt="Java Logo Programiz" class="title-section__icon" src="//cdn.programiz.com/cdn/farfuture/-U76XMjWzWON9SCeJZuGZ99WdfNyxdxygPjLe2L3yPQ/mtime:1582195806/sites/all/themes/programiz/assets/java.svg" title="Java"></p>
+      </div>
+          </a>
+      <div class="title-section__detail-container">
+        <h1 class="title-section__title">Java Examples</h1>
+        <div class="nav-tab d-none d-md-flex">
+          <a title="Java Tutorials" href="/java-programming" class="nav-tab__node">
+            <svg class="programiz-icon nav-tab__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#book"></use></svg>
+            Tutorials
+          </a>
+          <a class="nav-tab__node nav-tab--pro-link" href="https://programiz.pro/learn/master-java?utm_source=landing-nav&amp;utm_campaign=programiz&amp;utm_medium=referral" title="Learn Java Interactively">
+          <img class="programiz-icon nav-tab__icon" src="//cdn.programiz.com/cdn/farfuture/gRQEdEbZTiFw7OHhK2yE5KZub2Ip3wc2wPXmGHzyV10/mtime:1650454945/sites/all/themes/programiz/assets/feather-icon.svg">
+          Course
+        </a>
+          <a title="Java Examples" href="/java-programming/examples" class="nav-tab__node">
+            <svg class="programiz-icon nav-tab__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#align-left"></use></svg>
+            Examples
+          </a>
+                      <a title="Java References" href="/java-programming/library" class="nav-tab__node">
+                  <svg class="programiz-icon nav-tab__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#box"></use></svg>
+                  References
+              </a>
+              <a title="Java Online Compiler" href="/java-programming/online-compiler/" class="nav-tab__node">
+                <svg class="programiz-icon nav-tab__icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#code-circle"></use></svg>
+                Compiler
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-tab nav-tab--sp d-md-none">
+      <a title="Java Tutorials" href="/java-programming" class="nav-tab__node">
+        Tutorials
+      </a>
+      <a class="nav-tab__node nav-tab--pro-link" href="https://programiz.pro/learn/master-java?utm_source=landing-nav=programiz&amp;utm_medium=referral" title="Learn Java Interactively">Course
+    </a>
+      <a title="Java Examples" href="/java-programming/examples" class="nav-tab__node">
+        Examples
+      </a>
+          <a title="Java References" href="/java-programming/library" class="nav-tab__node">
+          References
+      </a>
+      <a title="Java Online Compiler" href="/java-programming/online-compiler" class="nav-tab__node">
+        Compiler
+    </a>
+    </div>
+    <div class="program-description pb-9x">
+      <p class="mb-4x">
+        The best way to learn Java programming is by practicing examples. The page
+        contains examples on basic concepts of Java. You are advised to take the
+        references from these examples and try them on your own.
+      </p>
+      <p>
+        All the programs on this page are tested and should work on all platforms.</p>
+
+        <p><strong>Want to learn Java by writing code yourself?</strong> Enroll in our <a href="https://programiz.pro/learn/master-java?utm_source=landing-page-body&amp;utm_campaign=programiz&amp;utm_medium=referral">Interactive Java Course</a> for FREE.</p> 
+    </div>
+  </div>            </div>
+        </div>
+    </div>
+
+
+    <div class="contents contents--neg-120">
+        <div class="container">
+            <div class="row d-none d-md-flex">
+
+    <div class="col-sm-12">
+        <h3 class="grouped-card-title">Popular Examples</h3>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <a title="Java Program to Check Prime Number" href="/java-programming/examples/prime-number">
+            <div class="card card--even-spaced card--examples card--examples--blue card--examples--1">
+                <p class="card__title">
+                    Java Examples
+                </p>
+                <p class="card__description">Java Program to Check Prime Number</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <a title="Java Program to Display Fibonacci Series" href="/java-programming/examples/fibonacci-series">
+            <div class="card card--even-spaced card--examples card--examples--purple card--examples--2">
+                <p class="card__title">
+                    Java Examples
+                </p>
+                <p class="card__description">Java Program to Display Fibonacci Series</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <a title="Java Program to Create Pyramids and Patterns" href="/java-programming/examples/pyramid-pattern">
+            <div class="card card--even-spaced card--examples card--examples--blue card--examples--3">
+                <p class="card__title">
+                    Java Examples
+                </p>
+                <p class="card__description">Java Program to Create Pyramids and Patterns</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3">
+        <a title="Java Program to Reverse a Number" href="/java-programming/examples/reverse-number">
+            <div class="card card--even-spaced card--examples card--examples--purple
+                        card--examples--4">
+                <p class="card__title">
+                    Java Examples
+                </p>
+                <p class="card__description">Java Program to Reverse a Number</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card-alt mb-2x d-block d-md-none">
+            <div class="cart-alt__contents">
+                <div class="list">
+                    <h3>Popular Examples</h3>
+                    <ul><li>
+                            <a title="Java Program to Check Prime Number" href="/java-programming/examples/prime-number">Java Program to Check Prime Number</a>
+                        </li>
+                        <li>
+                            <a title="Java Program to Display Fibonacci Series" href="/java-programming/examples/fibonacci-series">Java Program to Display Fibonacci
+                                Series</a>
+                        </li>
+                        <li>
+                            <a title="Java Program to Create Pyramids and Patterns" href="/java-programming/examples/pyramid-pattern">Java Program to Create Pyramids and
+                                Patterns</a>
+                        </li>
+                        <li>
+                            <a title="Java Program to Reverse a Number" href="/java-programming/examples/reverse-number">Java Program to Reverse a Number</a>
+                        </li>
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+</div>            <div class="example-contents">
+                <div class="row">
+                    <div class="col-sm-12 col-reset">
+                    
+                    <div class="tabbed-content d-block d-lg-flex view view-python-programming-examples-page view-id-python_programming_examples_page view-display-id-page_3 examples-page-views view-dom-id-d3e6c94c4006b5b87bf5b85b31abaa19">
+
+                        <div class="tabbed-content__left">
+
+                            <div class="tabbed-link-container">
+                                                                    <form class="ctools-auto-submit-full-form" action="/java-programming/examples" method="get" id="views-exposed-form-python-programming-examples-page-page-3" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-select-wrapper" class="views-exposed-widget views-widget-filter-field_java_category_tid">
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-select">
+ <div class="bef-select-as-links tabbed-link-container"><div class="form-item">
+ <div id="edit-select-all" class="form-item tabbed-link form-item-edit-select-all">
+ <a href="https://www.programiz.com/java-programming/examples" class="tabbed-link__node tabbed-link__node--active">All Examples</a>
+</div>
+<div id="edit-select-58" class="form-item tabbed-link form-item-edit-select-58">
+ <a href="https://www.programiz.com/java-programming/examples?select=58" class="tabbed-link__node">Introduction</a>
+</div>
+<div id="edit-select-129" class="form-item tabbed-link form-item-edit-select-129">
+ <a href="https://www.programiz.com/java-programming/examples?select=129" class="tabbed-link__node">Type Conversion</a>
+</div>
+<div id="edit-select-61" class="form-item tabbed-link form-item-edit-select-61">
+ <a href="https://www.programiz.com/java-programming/examples?select=61" class="tabbed-link__node">Decision Making and Loop</a>
+</div>
+<div id="edit-select-62" class="form-item tabbed-link form-item-edit-select-62">
+ <a href="https://www.programiz.com/java-programming/examples?select=62" class="tabbed-link__node">Functions</a>
+</div>
+<div id="edit-select-89" class="form-item tabbed-link form-item-edit-select-89">
+ <a href="https://www.programiz.com/java-programming/examples?select=89" class="tabbed-link__node">Arrays</a>
+</div>
+<div id="edit-select-64" class="form-item tabbed-link form-item-edit-select-64">
+ <a href="https://www.programiz.com/java-programming/examples?select=64" class="tabbed-link__node">Object and Class</a>
+</div>
+<div id="edit-select-127" class="form-item tabbed-link form-item-edit-select-127">
+ <a href="https://www.programiz.com/java-programming/examples?select=127" class="tabbed-link__node">String</a>
+</div>
+<div id="edit-select-66" class="form-item tabbed-link form-item-edit-select-66">
+ <a href="https://www.programiz.com/java-programming/examples?select=66" class="tabbed-link__node">Collections</a>
+</div>
+<div id="edit-select-126" class="form-item tabbed-link form-item-edit-select-126">
+ <a href="https://www.programiz.com/java-programming/examples?select=126" class="tabbed-link__node">Algorithms</a>
+</div>
+<div id="edit-select-100" class="form-item tabbed-link form-item-edit-select-100">
+ <a href="https://www.programiz.com/java-programming/examples?select=100" class="tabbed-link__node">Files</a>
+</div>
+<div id="edit-select-128" class="form-item tabbed-link form-item-edit-select-128">
+ <a href="https://www.programiz.com/java-programming/examples?select=128" class="tabbed-link__node">I/O Stream</a>
+</div>
+<div id="edit-select-91" class="form-item tabbed-link form-item-edit-select-91">
+ <a href="https://www.programiz.com/java-programming/examples?select=91" class="tabbed-link__node">Advanced</a>
+</div>
+
+</div>
+<select style="display: none;" id="edit-select" name="select" class="form-select"><option value="All" selected>All Examples</option><option value="58">Introduction</option><option value="129">Type Conversion</option><option value="61">Decision Making and Loop</option><option value="62">Functions</option><option value="89">Arrays</option><option value="64">Object and Class</option><option value="127">String</option><option value="66">Collections</option><option value="126">Algorithms</option><option value="100">Files</option><option value="128">I/O Stream</option><option value="91">Advanced</option></select><input type="hidden" class="bef-new-value" name="select" value="All"></div>
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input class="ctools-use-ajax ctools-auto-submit-click js-hide element-hidden form-submit" type="submit" id="edit-submit-python-programming-examples-page" name="" value="Apply"></div>
+      </div>
+</div>
+</div></form>                                
+                                                                    <style>
+                                        #div-gpt-ad-Programizcom36792 {
+                                            display: none;
+                                        }
+
+                                        @media(min-width: 992px) {
+                                            #div-gpt-ad-Programizcom36792 {
+                                                display: block;
+                                            }
+                                        }
+                                    </style><div id="div-gpt-ad-Programizcom36792" style="width:300px; margin: 40px auto;">
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="tabbed-content__right">
+                            
+                                                            <ol><li><a href="/java-programming/examples/print-integer">Java Program to Print an Integer (Entered by the User)</a></li><li><a href="/java-programming/examples/add-numbers">Java Program to Add Two Integers</a></li><li><a href="/java-programming/examples/multiply-floating-numbers">Java Program to Multiply two Floating Point Numbers</a></li><li><a href="/java-programming/examples/ascii-value-character">Java Program to Find ASCII Value of a character</a></li><li><a href="/java-programming/examples/compute-quotient-remainder">Java Program to Compute Quotient and Remainder</a></li><li><a href="/java-programming/examples/swap-two-numbers">Java Program to Swap Two Numbers</a></li><li><a href="/java-programming/examples/even-odd">Java Program to Check Whether a Number is Even or Odd</a></li><li><a href="/java-programming/examples/vowel-consonant">Java Program to Check Whether an Alphabet is Vowel or Consonant</a></li><li><a href="/java-programming/examples/largest-number-three">Java Program to Find the Largest Among Three Numbers</a></li><li><a href="/java-programming/examples/quadratic-roots-equation">Java Program to Find all Roots of a Quadratic Equation</a></li><li><a href="/java-programming/examples/leap-year">Java Program to Check Leap Year </a></li><li><a href="/java-programming/examples/positive-negative">Java Program to Check Whether a Number is Positive or Negative</a></li><li><a href="/java-programming/examples/alphabet">Java Program to Check Whether a Character is Alphabet or Not</a></li><li><a href="/java-programming/examples/sum-natural-numbers">Java Program to Calculate the Sum of Natural Numbers</a></li><li><a href="/java-programming/examples/factorial">Java Program to Find Factorial of a Number</a></li><li><a href="/java-programming/examples/multiplication-table">Java Program to Generate Multiplication Table</a></li><li><a href="/java-programming/examples/fibonacci-series">Java Program to Display Fibonacci Series</a></li><li><a href="/java-programming/examples/hcf-gcd">Java Program to Find GCD of two Numbers</a></li><li><a href="/java-programming/examples/lcm">Java Program to Find LCM of two Numbers</a></li><li><a href="/java-programming/examples/display-alphabets">Java Program to Display Alphabets (A to Z) using loop</a></li><li><a href="/java-programming/examples/digits-count">Java Program to Count Number of Digits in an Integer</a></li><li><a href="/java-programming/examples/reverse-number">Java Program to Reverse a Number</a></li><li><a href="/java-programming/examples/power-number">Java Program to Calculate the Power of a Number</a></li><li><a href="/java-programming/examples/palindrome-number">Java Program to Check Palindrome</a></li><li><a href="/java-programming/examples/prime-number">Java Program to Check Whether a Number is Prime or Not</a></li><li><a href="/java-programming/examples/prime-number-interval">Java Program to Display Prime Numbers Between Two Intervals</a></li><li><a href="/java-programming/examples/armstrong-number">Java Program to Check Armstrong Number</a></li><li><a href="/java-programming/examples/armstrong-number-interval">Java Program to Display Armstrong Number Between Two Intervals</a></li><li><a href="/java-programming/examples/prime-number-function">Java Program to Display Prime Numbers Between Intervals Using Function</a></li><li><a href="/java-programming/examples/armstrong-number-function">Java Program to Display Armstrong Numbers Between Intervals Using Function</a></li><li><a href="/java-programming/examples/factors-number">Java Program to Display Factors of a Number</a></li><li><a href="/java-programming/examples/calculator-switch-case">Java Program to Make a Simple Calculator Using switch...case</a></li><li><a href="/java-programming/examples/sum-prime-numbers">Java Program to Check Whether a Number can be Expressed as Sum of Two Prime Numbers</a></li><li><a href="/java-programming/examples/sum-natural-numbers-recursion">Java Program to Find the Sum of Natural Numbers using Recursion</a></li><li><a href="/java-programming/examples/factorial-recursion">Java Program to Find Factorial of a Number Using Recursion</a></li><li><a href="/java-programming/examples/gcd-hcf-recursion">Java Program to Find G.C.D Using Recursion</a></li><li><a href="/java-programming/examples/binary-decimal-convert">Java Program to Convert Binary Number to Decimal and vice-versa</a></li><li><a href="/java-programming/examples/octal-decimal-convert">Java Program to Convert Octal Number to Decimal and vice-versa</a></li><li><a href="/java-programming/examples/binary-octal-convert">Java Program to Convert Binary Number to Octal and vice-versa</a></li><li><a href="/java-programming/examples/reverse-sentence">Java Program to Reverse a Sentence Using Recursion</a></li><li><a href="/java-programming/examples/power-number-recursion">Java Program to calculate the power using recursion</a></li><li><a href="/java-programming/examples/average-arrays">Java Program to Calculate Average Using Arrays</a></li><li><a href="/java-programming/examples/largest-array">Java Program to Find Largest Element of an Array</a></li><li><a href="/java-programming/examples/standard-deviation">Java Program to Calculate Standard Deviation</a></li><li><a href="/java-programming/examples/add-matrix">Java Program to Add Two Matrix Using Multi-dimensional Arrays</a></li><li><a href="/java-programming/examples/multiply-matrix">Java Program to Multiply Two Matrix Using Multi-dimensional Arrays</a></li><li><a href="/java-programming/examples/multiply-matrix-function">Java Program to Multiply two Matrices by Passing Matrix to a Function</a></li><li><a href="/java-programming/examples/transpose-matrix">Java Program to Find Transpose of a Matrix</a></li><li><a href="/java-programming/examples/frequency-character">Java Program to Find the Frequency of Character in a String</a></li><li><a href="/java-programming/examples/vowel-consonant-count-string">Java Program to Count the Number of Vowels and Consonants in a Sentence</a></li><li><a href="/java-programming/examples/lexicographical-order-words">Java Program to Sort Elements in Lexicographical Order (Dictionary Order)</a></li><li><a href="/java-programming/examples/add-complex-number">Java Program to Add Two Complex Numbers by Passing Class to a Function</a></li><li><a href="/java-programming/examples/difference-time">Java Program to Calculate Difference Between Two Time Periods</a></li><li><a href="/java-programming/examples/pyramid-pattern">Java Code To Create Pyramid and Pattern</a></li><li><a href="/java-programming/examples/remove-whitespaces">Java Program to Remove All Whitespaces from a String</a></li><li><a href="/java-programming/examples/print-array">Java Program to Print an Array</a></li><li><a href="/java-programming/examples/string-date">Java Program to Convert String to Date</a></li><li><a href="/java-programming/examples/round-number-decimal">Java Program to Round a Number to n Decimal Places</a></li><li><a href="/java-programming/examples/concatenate-two-arrays">Java Program to Concatenate Two Arrays</a></li><li><a href="/java-programming/examples/char-string">Java Program to Convert Character to String and Vice-Versa</a></li><li><a href="/java-programming/examples/array-contains-value">Java Program to Check if An Array Contains a Given Value</a></li><li><a href="/java-programming/examples/string-empty-null">Java Program to Check if a String is Empty or Null</a></li><li><a href="/java-programming/examples/current-date-time">Java Program to Get Current Date/TIme</a></li><li><a href="/java-programming/examples/milliseconds-minutes-seconds">Java Program to Convert Milliseconds to Minutes and Seconds</a></li><li><a href="/java-programming/examples/add-two-dates">Java Program to Add Two Dates</a></li><li><a href="/java-programming/examples/join-two-lists">Java Program to Join Two Lists</a></li><li><a href="/java-programming/examples/convert-list-array">Java Program to Convert a List to Array and Vice Versa</a></li><li><a href="/java-programming/examples/current-working-directory">Java Program to Get Current Working Directory</a></li><li><a href="/java-programming/examples/convert-map-list">Java Program to Convert Map (HashMap) to List</a></li><li><a href="/java-programming/examples/convert-array-set">Java Program to Convert Array to Set (HashSet) and Vice-Versa</a></li><li><a href="/java-programming/examples/convert-byte-array-hexadecimal">Java Program to Convert Byte Array to Hexadecimal</a></li><li><a href="/java-programming/examples/string-from-file">Java Program to Create String from Contents of a File</a></li><li><a href="/java-programming/examples/append-text-existing-file">Java Program to Append Text to an Existing File</a></li><li><a href="/java-programming/examples/convert-stack-trace-string">Java Program to Convert a Stack Trace to a String</a></li><li><a href="/java-programming/examples/convert-file-byte-array">Java Program to Convert File to byte array and Vice-Versa</a></li><li><a href="/java-programming/examples/convert-inputstream-string">Java Program to Convert InputStream to String</a></li><li><a href="/java-programming/examples/convert-outputstream-string">Java Program to Convert OutputStream to String</a></li><li><a href="/java-programming/examples/enum-by-string-value">Java Program to Lookup enum by String value</a></li><li><a href="/java-programming/examples/compare-strings">Java Program to Compare Strings</a></li><li><a href="/java-programming/examples/sort-map-values">Java Program to Sort a Map By Values</a></li><li><a href="/java-programming/examples/sort-custom-objects-property">Java Program to Sort ArrayList of Custom Objects By Property</a></li><li><a href="/java-programming/examples/check-string-numeric">Java Program to Check if a String is Numeric</a></li><li><a href="/java-programming/examples/char-to-int-conversion">Java Program to convert char type variables to int</a></li><li><a href="/java-programming/examples/int-to-char-conversion">Java Program to convert int type variables to char</a></li><li><a href="/java-programming/examples/long-to-int-conversion">Java Program to convert long type variables into int</a></li><li><a href="/java-programming/examples/int-to-long-conversion">Java Program to convert int type variables to long</a></li><li><a href="/java-programming/examples/boolean-to-string-conversion">Java Program to convert boolean variables into string</a></li><li><a href="/java-programming/examples/string-to-boolean-conversion">Java Program to convert string type variables into boolean</a></li><li><a href="/java-programming/examples/string-to-int-conversion">Java Program to convert string type variables into int</a></li><li><a href="/java-programming/examples/int-to-string-conversion">Java Program to convert int type variables to String</a></li><li><a href="/java-programming/examples/int-to-double-conversion">Java Program to convert int type variables to double</a></li><li><a href="/java-programming/examples/double-to-int-conversion">Java Program to convert double type variables to int</a></li><li><a href="/java-programming/examples/string-to-double-conversion">Java Program to convert string variables to double</a></li><li><a href="/java-programming/examples/double-to-string-conversion">Java Program to convert double type variables to string</a></li><li><a href="/java-programming/examples/primitive-types-wrapper-objects">Java Program to convert primitive types to objects and vice versa</a></li><li><a href="/java-programming/examples/bubble-sort">Java Program to Implement Bubble Sort algorithm</a></li><li><a href="/java-programming/examples/quick-sort">Java Program to Implement Quick Sort Algorithm</a></li><li><a href="/java-programming/examples/merge-sort">Java Program to Implement Merge Sort Algorithm</a></li><li><a href="/java-programming/examples/binary-search">Java Program to Implement Binary Search Algorithm</a></li><li><a href="/java-programming/examples/call-one-constructor-from-another">Java Program to Call One Constructor from another</a></li><li><a href="/java-programming/examples/private-constructor-implementation">Java Program to implement private constructors</a></li><li><a href="/java-programming/examples/lambda-expression-as-method-parameter">Java Program to pass lambda expression as a method argument</a></li><li><a href="/java-programming/examples/passing-method-as-argument">Java Program to pass method call as arguments to another method</a></li><li><a href="/java-programming/examples/calculate-methods-execution-time">Java Program to Calculate the Execution Time of Methods</a></li><li><a href="/java-programming/examples/string-to-inputstream">Java Program to Convert a String into the InputStream</a></li><li><a href="/java-programming/examples/inputstream-to-bytearray-conversion">Java Program to Convert the InputStream into Byte Array</a></li><li><a href="/java-programming/examples/load-file-as-inputstream">Java Program to Load File as InputStream</a></li><li><a href="/java-programming/examples/create-and-write-to-file">Java Program to Create File and Write to the File</a></li><li><a href="/java-programming/examples/read-file">Java Program to Read the Content of a File Line by Line</a></li><li><a href="/java-programming/examples/delete-file">Java Program to Delete File in Java</a></li><li><a href="/java-programming/examples/delete-directory">Java Program to Delete Empty and Non-empty Directory</a></li><li><a href="/java-programming/examples/get-file-extension">Java Program to Get the File Extension</a></li><li><a href="/java-programming/examples/get-file-name-from-absolute-path">Java Program to Get the name of the file from the absolute path</a></li><li><a href="/java-programming/examples/get-relative-path">Java Program to Get the relative path from two absolute paths</a></li><li><a href="/java-programming/examples/count-lines-in-file">Java Program to Count number of lines present in the file</a></li><li><a href="/java-programming/examples/get-class-of-object">Java Program to Determine the class of an object</a></li><li><a href="/java-programming/examples/create-enum-class">Java Program to Create an enum class</a></li><li><a href="/java-programming/examples/print-object">Java Program to Print object of a class</a></li><li><a href="/java-programming/examples/create-custom-exception">Java Program to Create custom exception</a></li><li><a href="/java-programming/examples/create-immutable-class">Java Program to Create an Immutable Class</a></li><li><a href="/java-programming/examples/check-if-two-strings-are-anagram">Java Program to Check if two strings are anagram</a></li><li><a href="/java-programming/examples/compute-all-string-permutation">Java Program to Compute all the permutations of the string</a></li><li><a href="/java-programming/examples/generate-random-string">Java Program to Create random strings</a></li><li><a href="/java-programming/examples/clear-stringbuffer">Java Program to Clear the StringBuffer</a></li><li><a href="/java-programming/examples/capitalize-first-character-of-string">Java Program to Capitalize the first character of each word in a String</a></li><li><a href="/java-programming/examples/iterate-each-string-characters">Java Program to Iterate through each characters of the string.</a></li><li><a href="/java-programming/examples/differentiate-string-equals">Java Program to Differentiate String == operator and equals() method</a></li><li><a href="/java-programming/examples/implement-switch-on-strings">Java Program to Implement switch statement on strings</a></li><li><a href="/java-programming/examples/simple-compound-interest">Java Program to Calculate simple interest and compound interest</a></li><li><a href="/java-programming/examples/implement-multiple-inheritance">Java Program to Implement multiple inheritance</a></li><li><a href="/java-programming/examples/determine-os-name">Java Program to Determine the name and version of the operating system</a></li><li><a href="/java-programming/examples/check-if-two-booleans-are-true">Java Program to Check if two of three boolean variables are true</a></li><li><a href="/java-programming/examples/iterate-over-enums">Java Program to Iterate over enum</a></li><li><a href="/java-programming/examples/check-birthday">Java Program to Check the birthday and print Happy Birthday message</a></li><li><a href="/java-programming/examples/linkedlist-implementation">Java Program to Implement LinkedList</a></li><li><a href="/java-programming/examples/stack-implementation">Java Program to Implement stack data structure</a></li><li><a href="/java-programming/examples/queue-implementation">Java Program to Implement the queue data structure</a></li><li><a href="/java-programming/examples/get-middle-element-of-linkedlist">Java Program to Get the middle element of LinkedList in a single iteration</a></li><li><a href="/java-programming/examples/linkedlist-array-conversion">Java Program to Convert the LinkedList into an Array and vice versa</a></li><li><a href="/java-programming/examples/arraylist-string-conversion">Java Program to Convert the ArrayList into a string and vice versa</a></li><li><a href="/java-programming/examples/iterate-over-arraylist">Java Program to Iterate over an ArrayList</a></li><li><a href="/java-programming/examples/iterate-over-hashmap">Java Program to Iterate over a HashMap</a></li><li><a href="/java-programming/examples/iterate-over-set">Java Program to Iterate over a Set</a></li><li><a href="/java-programming/examples/merge-two-lists">Java Program to Merge two lists</a></li><li><a href="/java-programming/examples/update-hashmap-value">Java Program to Update value of HashMap using key</a></li><li><a href="/java-programming/examples/remove-duplicate-elements-from-arraylist">Java Program to Remove duplicate elements from ArrayList</a></li><li><a href="/java-programming/examples/get-key-from-hashmap-using-value">Java Program to Get key from HashMap using the value</a></li><li><a href="/java-programming/examples/detect-loop-in-linkedlist">Java Program to Detect loop in a LinkedList</a></li><li><a href="/java-programming/examples/calculate-set-union">Java Program to Calculate union of two sets</a></li><li><a href="/java-programming/examples/calculate-set-intersection">Java Program to Calculate the intersection of two sets</a></li><li><a href="/java-programming/examples/calculate-set-difference">Java Program to Calculate the difference between two sets</a></li><li><a href="/java-programming/examples/check-subset-of-a-set">Java Program to Check if a set is the subset of another set</a></li><li><a href="/java-programming/examples/sort-map-by-keys">Java Program to Sort map by keys</a></li><li><a href="/java-programming/examples/pass-arraylist-as-function-argument">Java Program to Pass ArrayList as the function argument</a></li><li><a href="/java-programming/examples/iterate-over-arraylist-using-lambda-expression">Java Program to Iterate over ArrayList using Lambda Expression</a></li><li><a href="/java-programming/examples/binary-tree-implementation">Java Program to Implement Binary Tree Data Structure</a></li><li><a href="/java-programming/examples/preorder-tree-traversal">Java Program to Perform the preorder tree traversal</a></li><li><a href="/java-programming/examples/postorder-tree-traversal">Java Program to Perform the postorder tree traversal</a></li><li><a href="/java-programming/examples/inorder-tree-traversal">Java Program to Perform the inorder tree traversal</a></li><li><a href="/java-programming/examples/count-leaf-nodes-of-tree">Java Program to Count number of leaf nodes in a tree</a></li><li><a href="/java-programming/examples/check-string-contains-substring">Java Program to Check if a string contains a substring</a></li><li><a href="/java-programming/examples/access-private-members">Java Program to Access private members of a class</a></li><li><a href="/java-programming/examples/check-valid-shuffle-of-strings">Java Program to Check if a string is a valid shuffle of two distinct strings</a></li><li><a href="/java-programming/examples/graph-implementation">Java Program to Implement the graph data structure</a></li><li><a href="/java-programming/examples/remove-element-from-linkedlist">Java Program to Remove elements from the LinkedList.</a></li><li><a href="/java-programming/examples/add-element-to-linkedlist">Java Program to Add elements to a LinkedList</a></li><li><a href="/java-programming/examples/access-element-from-linkedlist">Java Program to Access elements from a LinkedList.</a></li></ol></div>
+                    </div>
+
+                                            <style>
+                            #div-gpt-ad-Programizcom36790 {
+                                display: none;
+                            }
+
+                            #div-gpt-ad-Programizcom36794 {
+                                display: block;
+                                margin: 0 auto;
+                            }
+
+                            @media(min-width: 992px) {
+                                #div-gpt-ad-Programizcom36790 {
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+
+                                #div-gpt-ad-Programizcom36794 {
+                                    display: none;
+                                }
+                            }
+                        </style><div id="div-gpt-ad-Programizcom36790" style="height:90px; width:728px; margin: 24px auto;">
+                        </div>
+
+                        <div id="div-gpt-ad-Programizcom36794" style="width:300px; margin: 24px auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+      <footer class="footer"><div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="mauticform_wrapper_generalsubscribersformmobile" class="sp-footer-form d-block d-md-none mauticform_wrapper">
+        <form autocomplete="false" role="form" method="post" action="https://email.programiz.com/form/submit?formId=9" id="mauticform_generalsubscribersformmobile" data-mautic-form="generalsubscribersformmobile" enctype="multipart/form-data" class="card card--even-spaced card--shadowed-up card--no-border">
+          <div class="mauticform-error" id="mauticform_generalsubscribersformmobile_error"></div>
+          <div class="mauticform-message" id="mauticform_generalsubscribersformmobile_message"></div>
+          <div class="mauticform-innerform">
+            <div class="footer__form__title">Join our newsletter for the latest updates.</div>
+
+            <div class="mauticform-page-wrapper mauticform-page-1 input-group" data-mautic-form-page="1">
+
+              <div id="mauticform_generalsubscribersformmobile_email1" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required input-group" data-validate="email1" data-validation-type="email">
+                <input id="mauticform_input_generalsubscribersformmobile_email1" name="mauticform[email1]" value="" placeholder="Enter Email Address*" class="mauticform-input input-group__control" type="email"><span class="mauticform-errormsg" style="display: none;">This is required.</span>
+              </div>
+
+              <div id="mauticform_generalsubscribersformmobile_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-2 input-group">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_generalsubscribersformmobile_submit" value="" class="mauticform-button input-group__action btn btn--primary">Join</button>
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" name="mauticform[formId]" id="mauticform_generalsubscribersformmobile_id" value="9"><input type="hidden" name="mauticform[return]" id="mauticform_generalsubscribersformmobile_return" value=""><input type="hidden" name="mauticform[formName]" id="mauticform_generalsubscribersformmobile_name" value="generalsubscribersformmobile"></form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xl-4 col-lg-5 col-md-6 d-none d-md-block">
+      <div class="footer__content">
+        <object class="footer__logo" data="//cdn.programiz.com/sites/all/themes/programiz/assets/logo_white.svg" type="image/svg+xml"></object>
+
+        <div class="mauticform_wrapper" id="mauticform_wrapper_generalsubscribersform">
+          <form action="https://email.programiz.com/form/submit?formId=6" autocomplete="false" class="footer__form" data-mautic-form="generalsubscribersform" enctype="multipart/form-data" id="mauticform_generalsubscribersform" method="post" role="form">
+            <div class="mauticform-error" id="mauticform_generalsubscribersform_error"></div>
+            <div class="mauticform-message" id="mauticform_generalsubscribersform_message"></div>
+            <div class="mauticform-innerform">
+              <div class="footer__form__title">Join our newsletter for the latest updates.</div>
+              <div class="mauticform-page-wrapper mauticform-page-1 input-group" data-mautic-form-page="1">
+                <div class="mauticform-row mauticform-email mauticform-field-1 mauticform-required input-group" data-validate="email1" data-validation-type="email" id="mauticform_generalsubscribersform_email1">
+                  <input class="mauticform-input input-group__control" id="mauticform_input_generalsubscribersform_email1" name="mauticform[email1]" placeholder="Enter Email Address*" type="email" value=""><span class="mauticform-errormsg" style="display: none;">This is required.</span>
+                </div>
+                <div class="mauticform-row mauticform-button-wrapper mauticform-field-2 input-group" id="mauticform_generalsubscribersform_submit">
+                  <button class="mauticform-button input-group__action btn btn--primary" id="mauticform_input_generalsubscribersform_submit" name="mauticform[submit]" type="submit" value="">Join</button>
+                </div>
+              </div>
+            </div>
+            <input id="mauticform_generalsubscribersform_id" name="mauticform[formId]" type="hidden" value="6"><input id="mauticform_generalsubscribersform_return" name="mauticform[return]" type="hidden" value=""><input id="mauticform_generalsubscribersform_name" name="mauticform[formName]" type="hidden" value="generalsubscribersform"></form>
+        </div>
+        <div class="footer__vendor-btn">
+          <div class="footer__vendor-btn__row">
+            <a href="https://play.google.com/store/apps/dev?id=8227237868464522664&amp;referrer=utm_campaign%3Dprogramiz-footer%26utm_source%3Dprogramiz-website" title="Programiz Apps on Play Store" rel="noopener" target="_blank">
+              <img class="app-download-btn app-download-btn--offset" src="//cdn.programiz.com/sites/tutorial2program/files/playstore.svg" height="39" width="138"></a>
+          </div>
+
+          <div class="footer__vendor-btn__row">
+            <a href="https://apps.apple.com/us/developer/parewa-labs-pvt-ltd/id1472188188&amp;ct=programiz-footer&amp;mt=8" title="Programiz Apps on App Store" rel="noopener" target="_blank">
+              <img class="app-download-btn" src="//cdn.programiz.com/sites/all/themes/programiz/assets/appstore.svg" height="39" width="138"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Tutorials</h4>
+
+        <ul class="footer__links"><li class="footer__links__nodes"><a class="link-node" href="/python-programming" title="Python Tutorials">Python 3 Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/javascript" title="JavaScript Tutorial">JavaScript Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/sql" title="SQL Tutorials">SQL Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/c-programming" title="C Tutorial">C Tutorial</a>
+          </li>
+          <li class="footer__links__nodes"><a class="link-node" href="/java-programming" title="Java Tutorial">Java
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/kotlin-programming" title="Kotlin Tutorial">Kotlin Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/cpp-programming" title="C++ Tutorial">C++
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/swift-programming" title="Swift Tutorial">Swift
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/csharp-programming" title="C# Tutorial">C#
+              Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/golang" title="Go Tutorials">Go Tutorial</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/dsa" title="Data Structures and Algorithms">DSA
+              Tutorial</a></li>
+        </ul></div>
+    </div>
+
+    <div class="col-lg-2  col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Examples</h4>
+
+        <ul class="footer__links"><li class="footer__links__nodes"><a class="link-node" href="/python-programming/examples" title="Python Examples">Python Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/javascript/examples" title="JavaScript Examples">JavaScript Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/c-programming/examples" title="C Examples">C
+              Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/java-programming/examples" title="Java Examples">Java Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/kotlin-programming/examples" title="Kotlin Examples">Kotlin Examples</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/cpp-programming/examples" title="C++ Examples">C++ Examples</a></li>
+        </ul></div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Company</h4>
+
+        <ul class="footer__links"><li class="footer__links__nodes"><a class="link-node" id="unic-gdpr" onclick='__tcfapi("openunic");return false;' style="display:none;cursor:pointer;">Change Ad Consent</a>
+          </li>
+          <li class="footer__links__nodes"><a class="link-node" id="unic-ccpa" onclick="window.__uspapi('openunic')" style="display:none;cursor:pointer;">Do not sell my data</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/about-us" title="About us">About</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/advertise" title="Advertise with us">Advertising</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+          <li class="footer__links__nodes"><a class="link-node" href="/contact" title="Contact us">Contact</a></li>
+          <li class="footer__links__nodes"><a title="Blog" href="/blog/" class="link-node">Blog</a></li>
+          <li class="footer__links__nodes"><a title="Programiz on Youtube" href="https://www.youtube.com/channel/UCREFp3D_n8JfcDonlm7Mpyw" class="link-node">Youtube</a></li>
+
+      </ul></div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-xs-6">
+      <div class="footer__link-area">
+        <h4 class="footer__link-area__title">Apps</h4>
+
+        <ul class="footer__links"><li class="footer__links__nodes">
+            <a class="link-node" href="/learn-python" title="Learn Python: Programiz" target="_blank" rel="noopener">Learn Python</a>
+            </li>
+          <li class="footer__links__nodes">
+            <a class="link-node" href="/learn-c" title="Learn C Programming: Programiz" target="_blank" rel="noopener">Learn C Programming</a>
+          </li>
+          <li class="footer__links__nodes">
+            <a class="link-node" href="/learn-java" title="Learn Java: Programiz" target="_blank" rel="noopener">Learn Java</a>
+          </li>
+        </ul></div>
+    </div>
+  </div>
+
+  <div class="sp-brand-area d-block d-md-none">
+    <div class="d-flex justify-content-center">
+      <img class="sp-brand-area__logo" src="//cdn.programiz.com/cdn/farfuture/DMD3csF8iiWLb-ksf11g-xTaCduxp9UlNwB0FYoIXOA/mtime:1582195806/sites/all/themes/programiz/assets/logo_white.svg" width="84" height="26"></div>
+
+    <div class="d-flex justify-content-center">
+      <div class="footer__vendor-btn__row">
+        <a href="https://play.google.com/store/apps/dev?id=8227237868464522664&amp;referrer=utm_campaign%3Dprogramiz-footer%26utm_source%3Dprogramiz-website" title="Programiz Apps on Play Store" target="_blank" rel="noopener">
+          <img class="app-download-btn app-download-btn--offset" src="//cdn.programiz.com/cdn/farfuture/d8oXG2v0dCLdIbQKcMRjJxSY96Ec6FBG-qAVJkrDFDU/mtime:1592900945/sites/all/themes/programiz/assets/playstore.svg" height="39" width="138"></a>
+      </div>
+
+      <div class="footer__vendor-btn__row">
+        <a href="https://apps.apple.com/us/developer/parewa-labs-pvt-ltd/id1472188188&amp;ct=programiz-footer&amp;mt=8" title="Programiz Apps on App Store" target="_blank" rel="noopener">
+          <img class="app-download-btn" src="//cdn.programiz.com/cdn/farfuture/G0ZBnGKr9e0xtuBVtFKkEKiLZtcp92YYJhqcPpBgFXU/mtime:1592900945/sites/all/themes/programiz/assets/appstore.svg" height="39" width="138"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__end">
+    <p class="copyright-text">© Parewa Labs Pvt. Ltd. All rights reserved.</p>
+
+    <div class="social-icons">
+      <a class="social-icons__links" href="https://www.facebook.com/programiz" title="Programiz on Facebook"><svg class="programiz-icon programiz-icon--small"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#facebook"></use></svg></a>
+      <a class="social-icons__links" href="https://www.instagram.com/_programiz/" title="Programiz on Instagram">
+        <svg class="programiz-icon programiz-icon--small"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#instagram"></use></svg></a>
+      <a class="social-icons__links" href="https://www.linkedin.com/company/programiz" title="Programiz on Linkedin">
+        <svg class="programiz-icon programiz-icon--small"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#linkedin"></use></svg></a>
+      <a class="social-icons__links" href="https://twitter.com/programiz" title="Programiz on Twitter">
+        <svg class="programiz-icon programiz-icon--small"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#twitter"></use></svg></a>
+    </div>
+  </div>
+</div>
+
+<script>
+function advagg_mod_2() {
+  // Count how many times this function is called.
+  advagg_mod_2.count = ++advagg_mod_2.count || 1;
+  try {
+    if (advagg_mod_2.count <= 40) {
+      
+  (function waitGEO() {
+    var readyGEO;
+    if (window['UnicI'] && window['UnicI'].geo && window['UnicI'].geo !== '-') {
+      readyGEO = true;
+      console.log(window['UnicI'].geo);
+      if (window['UnicI'].geo === 'EU') {
+        if (document.getElementById("unic-gdpr")) {
+          document.getElementById("unic-gdpr").style.display = 'block';
+        }
+      }
+      if (window['UnicI'].geo === 'CA') {
+        if (document.getElementById("unic-ccpa")) {
+          document.getElementById("unic-ccpa").style.display = 'block';
+        }
+      }
+    }
+    if (!readyGEO) {
+      setTimeout(waitGEO, 200);
+    }
+  })();
+
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_2.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_2.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 250 ms.
+      window.setTimeout(advagg_mod_2, 250);
+    }
+  }
+}
+function advagg_mod_2_check() {
+  if (window.jQuery && window.Drupal && window.Drupal.settings) {
+    advagg_mod_2();
+  }
+  else {
+    window.setTimeout(advagg_mod_2_check, 250);
+  }
+}
+advagg_mod_2_check();</script><div class="pop-up-sale">
+    <div class="pop-up-block">
+        <button class="btn btn--skeleton pop-up-block__close">
+            <svg class="programiz-icon"><use xlink:href="/sites/all/themes/programiz/assets/feather-sprite.svg#x"></use></svg></button>
+
+        <h3 class="pop-up-block__header-summer">
+            60% OFF
+        </h3>
+
+        <h3 class="pop-up-block__subheader-summer">
+            Sep 23 to 30
+        </h3>
+
+
+        <div class="pop-up-block--cta-summer-block">
+            <p class="pop-up-block--cta-summer-block__info">
+                Take advantage of Price Hike SALE<span></span> on Programiz PRO.
+            </p>
+
+            <a class="btn btn--primary btn--xlarge d-flex align-items-center pop-up-block--cta-summer-block__cta" title="Try Out Programiz Pro for Free" rel="nofollow" href="https://programiz.pro/offer/price-up?utm_source=popup-programiz&amp;utm_medium=popup&amp;utm_campaign=price-increase-sale__popup-programiz-web__September__60">
+                <span for="" class="btn__label">Claim Discount</span></a>
+        </div>
+    </div>
+</div>
+
+    
+    
+    
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKXT7MH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        </footer></main>
+  <script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__i4YWpFi9qhmzdEHXK0pWf4K1j1aO0GiH_8-xsd5A36s__3LmUXvKUKFW8jTo4b95ITJ544EspYHeTYnc82hIjF10__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__gFlTIlvK6mbrVqD2gLlLzLBfugcIV-Xr8X3-H3HdpVQ__CW-_1dcmVEwKkyOYX5GINI_YQqFc4XmEo9gskiKh8iU__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript" src="//cdn.programiz.com/sites/tutorial2program/files/advagg_js/js__--0Z8Ko2Ouantt4UUbDD1guuMHUWwLlSlrZ6GNz8h-g__PK2cfMIA5VvN9akHYyfRTdjVyQ6O1YKYlNcDqBdggGQ__DdD1UdeKEXumScAwIBnmVuP-kOInkxJzYmsYbmVxHfk.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function advagg_mod_4(){advagg_mod_4.count=++advagg_mod_4.count||1;try{if(advagg_mod_4.count<=40){var base_path='/';var module_path='sites/all/modules/programiz_rate_share';advagg_mod_4.count=100;}}
+catch(e){if(advagg_mod_4.count>=40){throw e;}
+else{window.setTimeout(advagg_mod_4,250);}}}
+function advagg_mod_4_check(){if(window.jQuery&&window.Drupal&&window.Drupal.settings){advagg_mod_4();}
+else{window.setTimeout(advagg_mod_4_check,250);}}
+advagg_mod_4_check();
+//--><!]]>
+</script>
+</body>
+
+</html>
