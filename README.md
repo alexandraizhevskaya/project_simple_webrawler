@@ -49,7 +49,7 @@ python main.py -url  your_url_link -walk-depth 2
 
 -----------------
 ### Структура репозитория
-* `crawler_class.py` - файл с классом `SimpleCrawler`, в иетоде которого `crawl` реализован рекурсивный обход ссылок
+* `crawler_class.py` - файл с классом `SimpleCrawler`, в методе которого `crawl` реализован рекурсивный обход ссылок
 * `main.py` - скрипт, запускающий функцию `run_crawling` из консоли
 * `requirements.txt` - requirements для настройки окружения
 * `data` - пример директории с htmls-файлами обработанных страниц 

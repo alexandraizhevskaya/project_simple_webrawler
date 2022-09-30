@@ -71,14 +71,6 @@ class SimpleCrawler:
                 links_set.update([new_url])
         return links_set
 
-    def reboot(self) -> None:
-        """
-        clean idx and visited set
-        to crawl another url
-        """
-        self.idx = 1
-        self.visited = set()
-
     @staticmethod
     def mkdir(data_dir: str) -> None:
         """
@@ -160,3 +152,11 @@ class SimpleCrawler:
                         print(walk_depth)
                         self.visited.update([i])
                         self.crawl(i, walk_depth - 1, file_name, data_dir)
+
+    def reboot(self) -> None:
+        """
+        clean idx and visited set
+        to crawl another url
+        """
+        self.idx = 1
+        self.visited = set()
