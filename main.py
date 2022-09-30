@@ -1,5 +1,5 @@
 import argparse
-from crawler import run_crawling
+from crawler_class import SimpleCrawler
 import logging
 logging.basicConfig(level=logging.INFO)
 
@@ -19,12 +19,12 @@ def main():
     walk_depth = args.walk_depth
 
     # run main func
-    if walk_depth > 10:
-        logging.warning('Walk depth is big, hence, recursive crawling can take long time or go wrong due to blocking.')
+    if walk_depth > 5:
+        logging.warning('Walk depth is huge, hence, recursive crawling can take long time or go wrong due to blocking.')
     logging.info(f'Start crawling  url: {url}. The depth of crawling: {walk_depth}')
-    run_crawling(url, walk_depth)
+    crawler = SimpleCrawler()
+    crawler.crawl(url, walk_depth)
 
 
 if __name__ == '__main__':
     main()
-
