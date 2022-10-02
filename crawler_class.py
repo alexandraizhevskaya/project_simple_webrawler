@@ -29,7 +29,7 @@ class SimpleCrawler:
         Get html content of a page with requests.
         If something goes wrong, returns None
         :param url: link to get html
-        :return: html page if sucess
+        :return: html page if success
         """
 
         # try to get url, processing exceptions
@@ -68,7 +68,7 @@ class SimpleCrawler:
             if new_url and new_url.startswith('/'):
                 new_url = urljoin(url, new_url)
                 # if new_url and new_url.startswith('http') and new_url not in visited:
-                links_set.update([new_url])
+                links_set.add(new_url)
         return links_set
 
     @staticmethod
@@ -149,7 +149,7 @@ class SimpleCrawler:
                 for i in links_set:
                     if i not in self.visited:
                         # mark url as visited
-                        self.visited.update([i])
+                        self.visited.add(i)
                         self.crawl(i, walk_depth - 1, file_name, data_dir)
 
     def reboot(self) -> None:
