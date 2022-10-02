@@ -23,7 +23,7 @@
 
 Также, если при отправке запроса пришел ответ, но его код не 200, появляется предупреждение, что ссылка была обработана, но статус не корректный:
 
-`Request status code for id 12 is not 200. Please, searc the meaning of the following request status: 403`
+`Request status code for id 12 is not 200. Please, search the meaning of the following request status: 403`
 
 #### *Важно*  
 В текущей реализации если при запускке crawler у Вас уже есть папка `data` и файл  `urls.txt` - они будут удалены и перезаписаны: в них кладется результат обхода запрошенной страницы.
