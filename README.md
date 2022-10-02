@@ -24,7 +24,7 @@ python main.py -url https://www.programiz.com/python-programming/global-local-no
 
 Для запуска рекомендуется использовать **python3.9**, а также понадобится **git**.
 
-Если Вы хотите запустить `web-crawler` на другом сайте, выполните в терминале следующие команды:
+Если Вы хотите запустить `web-crawler` на каком-то сайте, выполните в терминале следующие команды:
 ```commandline
 git clone git@github.com:alexandraizhevskaya/project_simple_webrawler.git
 cd project_simple_webrawler
