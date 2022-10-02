@@ -39,7 +39,7 @@ python main.py -url https://www.programiz.com/python-programming/global-local-no
 Если Вы хотите запустить `web-crawler` на другом сайте, выполните в терминале следующие команды:
 ```commandline
 git clone git@github.com:alexandraizhevskaya/project_simple_webrawler.git
-cd test
+cd project_simple_webrawler
 pip install -r requirements.txt
 python main.py -url  your_url_link -walk-depth 1
 ```
