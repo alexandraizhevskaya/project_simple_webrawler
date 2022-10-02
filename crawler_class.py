@@ -160,11 +160,11 @@ class SimpleCrawler:
 
             # walk recursively till the given walk_depth is reached
             if walk_depth > 0:
-                for i in links_set:
-                    if i not in self.visited:
+                for link in links_set:
+                    if link not in self.visited:
                         # mark url as visited
-                        self.visited.add(i)
-                        self.crawl(i, walk_depth - 1, file_name, data_dir)
+                        self.visited.add(link)
+                        self.crawl(link, walk_depth - 1, file_name, data_dir)
 
     def reboot(self) -> None:
         """
