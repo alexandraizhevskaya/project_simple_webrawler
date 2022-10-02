@@ -15,11 +15,14 @@
 
 ------------
 ### Использование
+
 Сейчас в репозитории в качестве примера находятся директория`data` и файл `urls.txt`. Они были получены с помощью следующей команды:
 
 ```commandline
 python main.py -url https://www.programiz.com/python-programming/global-local-nonlocal-variables -walk-depth 1
 ```
+
+Для запуска рекомендуется использовать **python3.9**, а также понадобится **git**.
 
 Если Вы хотите запустить `web-crawler` на другом сайте, выполните в терминале следующие команды:
 ```commandline

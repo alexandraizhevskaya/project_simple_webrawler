@@ -14,15 +14,19 @@ class SimpleCrawler:
         """
         Class to process url link and links connected to it to the given depth.
 
-        -idx - variable to assign indices to links being processed. It is incremented iteratively
-        -visited - set with links that have already been visited to maintain consistency
+        -idx - variable to assign indices to links being processed. It is
+        incremented iteratively
+        -visited - set with links that have already
+        been visited to maintain consistency
         """
         self.idx = 1
         self.visited = set()
         # some random headers - it doesn't really help but why not
         self.headers = {
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 '
-                          '(KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) '
+                          'AppleWebKit/537.36 '
+                          '(KHTML, like Gecko) Chrome/53.0.2785.143 '
+                          'Safari/537.36'}
 
     def get_html_page(self, url: str) -> Union[None, str]:
         """
@@ -34,10 +38,15 @@ class SimpleCrawler:
 
         # try to get url, processing exceptions
         try:
-            req = requests.get(url, headers=self.headers, allow_redirects=False, timeout=5)
+            req = requests.get(url,
+                               headers=self.headers,
+                               allow_redirects=False,
+                               timeout=5)
             if req.status_code != 200:
-                logging.error(f'Request status code for id {self.idx} is not 200. Please, search '
-                              f'the meaning of the following request status: {req.status_code}')
+                logging.error(f'Request status code for id {self.idx} is not '
+                              f'200. Please, search '
+                              f'the meaning of the following request status: '
+                              f'{req.status_code}')
             html_page = req.text
         # exception processing
         except requests.Timeout as e:
@@ -53,9 +62,10 @@ class SimpleCrawler:
     @staticmethod
     def get_all_links(html_page: str, url: str) -> Set:
         """
-        Process raw html with bs and get all the links from the processed url (only nested counts)
-        :param html_page: raw html content to process with beautiful soup
-        :param url: link that is being processed
+        Process raw html with bs and get all the links from the processed
+        url (only nested counts)
+        :param html_page: raw html content to
+        :param url: link that is being processed with beautiful soup
         :return: set of extracted links
         """
         # get the links
@@ -67,7 +77,6 @@ class SimpleCrawler:
             # check whether they are valid and belong to the website
             if new_url and new_url.startswith('/'):
                 new_url = urljoin(url, new_url)
-                # if new_url and new_url.startswith('http') and new_url not in visited:
                 links_set.add(new_url)
         return links_set
 
@@ -78,7 +87,8 @@ class SimpleCrawler:
         :param data_dir: directory name
         :return: None
         """
-        # if there is no directory - create it. If there is directory with such name, remove it recursively
+        # if there is no directory - create it. If there is directory with
+        # such name, remove it recursively
         if not os.path.exists(data_dir):
             os.mkdir(data_dir)
         else:
@@ -103,7 +113,8 @@ class SimpleCrawler:
         :param html_page: html context of url
         :return: None
         """
-        with open(os.path.join(data_dir, f'{self.idx}.html'), 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, f'{self.idx}.html'), 'w',
+                  encoding='utf-8') as f:
             f.write(html_page)
 
     def crawl(self,
@@ -114,9 +125,11 @@ class SimpleCrawler:
               ) -> None:
         """
         Main crawling function.
-        It starts with a given url and processes all the linked urls recursively.
-        As a result it saves a txt file with all the processed urls and the ids assigned to them
-        and files with their html content
+        It starts with a given url and processes all the linked
+        urls recursively.
+        As a result it saves a txt file with all the processed
+        urls and the ids assigned to them and files with their
+        html content
         :param url: link to start crawling
         :param walk_depth: depth of crawling
         :param file_name: name of file to write urls
@@ -126,7 +139,8 @@ class SimpleCrawler:
 
         html_page = self.get_html_page(url)
         if html_page:
-            # if it is the first page being processed, rewrite existing txt file or make a new one
+            # if it is the first page being processed, rewrite existing txt
+            # file or make a new one
             if self.idx == 1:
                 self.write_txt(file_name, url, 'w')
                 self.mkdir(data_dir)
