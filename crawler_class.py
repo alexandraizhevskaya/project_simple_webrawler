@@ -29,7 +29,7 @@ class SimpleCrawler:
         Get html content of a page with requests.
         If something goes wrong, returns None
         :param url: link to get html
-        :return: html page or None
+        :return: html page if sucess
         """
 
         # try to get url, processing exceptions
@@ -149,7 +149,6 @@ class SimpleCrawler:
                 for i in links_set:
                     if i not in self.visited:
                         # mark url as visited
-                        print(walk_depth)
                         self.visited.update([i])
                         self.crawl(i, walk_depth - 1, file_name, data_dir)
 
